@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎲 Dice Duel - Roll or Risk It!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- Navigation -->
+    <nav style="padding: 20px 0; border-bottom: 1px solid rgba(111, 66, 193, 0.3);">
+        <div class="container">
+         <a href="../index.html" class="go_home" onclick="goHome()">🏠 Home</a>
+            </a>
+        </div>
+    </nav>
+    
+    <div class="game-container">
+        <div class="header">
+            <h1 class="game-title">🎲 DICE DUEL</h1>
+            <p class="game-subtitle">First to 100 wins • Roll or risk it all!</p>
+        </div>
+
+        <div class="game-board">
+            <!-- Player 1 -->
+            <div class="player player--0 player--active" id="player--0">
+                <div class="player-header">
+                    <div class="player-avatar">
+                        <span class="avatar-emoji">🔥</span>
+                    </div>
+                    <div class="player-info">
+                        <h2 class="player-name" id="name--0">Player 1</h2>
+                        <div class="player-status">ROLLING</div>
+                    </div>
+                </div>
+                
+                <div class="score-section">
+                    <div class="total-score">
+                        <span class="score-label">TOTAL</span>
+                        <span class="score-value" id="score--0">0</span>
+                    </div>
+                    
+                    <div class="current-score-container">
+                        <div class="current-score">
+                            <span class="current-label">ROUND SCORE</span>
+                            <span class="current-value" id="current--0">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dice and Controls -->
+            <div class="center-section">
+                <div class="dice-container">
+                    <div class="dice hidden" id="dice">
+                        <div class="dice-face">
+                            <span class="dice-number">1</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="controls">
+                    <button class="btn btn-new" id="btn-new">
+                        <span class="btn-icon">🔄</span>
+                        <span class="btn-text">NEW GAME</span>
+                    </button>
+                    <button class="btn btn-roll" id="btn-roll">
+                        <span class="btn-icon">🎲</span>
+                        <span class="btn-text">ROLL DICE</span>
+                    </button>
+                    <button class="btn btn-hold" id="btn-hold">
+                        <span class="btn-icon">💎</span>
+                        <span class="btn-text">HOLD SCORE</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Player 2 -->
+            <div class="player player--1" id="player--1">
+                <div class="player-header">
+                    <div class="player-avatar">
+                        <span class="avatar-emoji">⚡</span>
+                    </div>
+                    <div class="player-info">
+                        <h2 class="player-name" id="name--1">Player 2</h2>
+                        <div class="player-status">WAITING</div>
+                    </div>
+                </div>
+                
+                <div class="score-section">
+                    <div class="total-score">
+                        <span class="score-label">TOTAL</span>
+                        <span class="score-value" id="score--1">0</span>
+                    </div>
+                    
+                    <div class="current-score-container">
+                        <div class="current-score">
+                            <span class="current-label">ROUND SCORE</span>
+                            <span class="current-value" id="current--1">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Winner Modal -->
+        <div class="winner-modal hidden" id="winner-modal">
+            <div class="winner-content">
+                <div class="winner-emoji">🏆</div>
+                <h2 class="winner-text">WINNER!</h2>
+                <p class="winner-name" id="winner-name">Player 1</p>
+                <button class="btn btn-new-game" onclick="newGame()">
+                    <span class="btn-icon">🔄</span>
+                    <span class="btn-text">PLAY AGAIN</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

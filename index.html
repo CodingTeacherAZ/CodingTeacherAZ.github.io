@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>theSADTeacher - Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#welcome-section">theSADTeacher</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#welcome-section">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certifications">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profile">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#social">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section id="welcome-section" class="d-flex align-items-center">
+        <div class="particles"></div>
+        <div class="container welcome-content">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="welcome-title">Hi, I'm theSADTeacher</h1>
+                    <p class="tagline">Instructor of Software and App Design || Empowering student-centered learning through innovation, passion, and heart—igniting minds for tomorrow.</p>
+                    <button class="cta-button" onclick="scrollToProjects()">
+                        <i class="fas fa-rocket me-2"></i>Explore My Universe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Epic Projects</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-tile">
+                        <div class="project-icon">
+                            <i class="fas fa-dice"></i>
+                        </div>
+                        <h3 class="project-title">Guess My Number</h3>
+                        <p class="project-description">A mind-bending number guessing game that challenges your intuition and luck. Can you crack the code?</p>
+                        <a href="GuessNumber/index.html" class="project-link">
+                            <i class="fas fa-play me-2"></i>Play Game
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-tile">
+                        <div class="project-icon">
+                            <i class="fas fa-dice-d6"></i>
+                        </div>
+                        <h3 class="project-title">Dice Duel Game</h3>
+                        <p class="project-description">Roll the dice, take the risk! A thrilling probability game where greed meets strategy.</p>
+                        <a href="DiceDuel/index.html" class="project-link">
+                            <i class="fas fa-play me-2"></i>Play Game
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-tile">
+                        <div class="project-icon">
+                            <i class="fas fa-dragon"></i>
+                        </div>
+                        <h3 class="project-title">Defender of the Realm</h3>
+                        <p class="project-description">An epic RPG adventure where heroes rise and legends are born. Defend your realm from ancient evils!</p>
+                        <a href="RPG/index.html" class="project-link">
+                            <i class="fas fa-sword me-2"></i>Enter Realm
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">Industry Certifications</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="cert-cube-container">
+                        <div class="cert-cube">
+                            <div class="cert-face cert-front">
+                                <div class="cert-icon">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <h5 class="cert-title">JavaScript</h5>
+                                <p class="cert-subtitle">Programming Language</p>
+                            </div>
+                            <div class="cert-face cert-back">
+                                <img src="Certifications/JS.png" alt="JavaScript Certificate" class="cert-image">
+                                <p class="cert-badge-text">Certified Expert</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="cert-cube-container">
+                        <div class="cert-cube">
+                            <div class="cert-face cert-front">
+                                <div class="cert-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h5 class="cert-title">Artificial Intelligence</h5>
+                                <p class="cert-subtitle">Machine Learning & AI</p>
+                            </div>
+                            <div class="cert-face cert-back">
+                                <img src="Certifications/AI.png" alt="AI Certificate" class="cert-image">
+                                <p class="cert-badge-text">AI Specialist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="cert-cube-container">
+                        <div class="cert-cube">
+                            <div class="cert-face cert-front">
+                                <div class="cert-icon">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <h5 class="cert-title">HTML & CSS</h5>
+                                <p class="cert-subtitle">Web Development</p>
+                            </div>
+                            <div class="cert-face cert-back">
+                                <img src="Certifications/HTML-CSS.png" alt="HTML CSS Certificate" class="cert-image">
+                                <p class="cert-badge-text">Web Expert</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="cert-cube-container">
+                        <div class="cert-cube">
+                            <div class="cert-face cert-front">
+                                <div class="cert-icon">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                                <h5 class="cert-title">Data Analytics</h5>
+                                <p class="cert-subtitle">Data Science</p>
+                            </div>
+                            <div class="cert-face cert-back">
+                                <img src="Certifications/DA.png" alt="Data Analytics Certificate" class="cert-image">
+                                <p class="cert-badge-text">Data Analyst</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="cert-cube-container">
+                        <div class="cert-cube">
+                            <div class="cert-face cert-front">
+                                <div class="cert-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <h5 class="cert-title">Computational Thinking</h5>
+                                <p class="cert-subtitle">Problem Solving</p>
+                            </div>
+                            <div class="cert-face cert-back">
+                                <img src="Certifications/CT.png" alt="Computational Thinking Certificate" class="cert-image">
+                                <p class="cert-badge-text">Logic Master</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="cert-cube-container">
+                        <div class="cert-cube">
+                            <div class="cert-face cert-front">
+                                <div class="cert-icon">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <h5 class="cert-title">Python</h5>
+                                <p class="cert-subtitle">Programming Language</p>
+                            </div>
+                            <div class="cert-face cert-back">
+                                <img src="Certifications/Python.png" alt="Python Certificate" class="cert-image">
+                                <p class="cert-badge-text">Python Pro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="cert-cube-container">
+                        <div class="cert-cube">
+                            <div class="cert-face cert-front">
+                                <div class="cert-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <h5 class="cert-title">Responsive Design</h5>
+                                <p class="cert-subtitle">Mobile-First Development</p>
+                            </div>
+                            <div class="cert-face cert-back">
+                                <img src="Certifications/Responsive_design.png" alt="Responsive Design Certificate" class="cert-image">
+                                <p class="cert-badge-text">Design Expert</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Profile Section -->
+<section id="profile" class="section">
+    <div class="container">
+        <h2 class="section-title">My Journey</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <h4><i class="fas fa-graduation-cap me-2"></i>The Beginning</h4>
+                        <p>Earned an advanced degree in extreme caffeine, Fabreeze-level hygiene, and electron warfare in momentum space.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h4><i class="fas fa-rocket me-2"></i>Professional Development</h4>
+                        <p>Having bested the quantum dragons, I laid down my lab coat, raised a whiteboard shield, gripped my Expo sword — and set off to decode the strange, twitchy realm of teen logic.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h4><i class="fas fa-code me-2"></i>First Lines of Code</h4>
+                        <p>Wrote my first "Hello, World" and fell in love with the magic of making computers do exactly what I wanted.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h4><i class="fas fa-chalkboard-teacher me-2"></i>Becoming theSADTeacher</h4>
+                        <p>Once an electron-wrangler, now a puppy-herder. Master’s in Solid State Physics, minor in snack drawer logistics — certified in best practices.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h4><i class="fas fa-heart me-2"></i>Present Day</h4>
+                        <p>Still on the mission: shaping chaos into code, laughter into learning, and making programming feel just dangerous enough to be exciting — and safe enough for every puppy to feel brave enough to try.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Social Media Section -->
+    <section id="social" class="section">
+        <div class="container">
+            <h2 class="section-title">Connect With Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <p class="lead mb-4">Let's build the future together! Connect with me on these platforms:</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" title="CodeWars">
+                            <i class="fas fa-code"></i>
+                        </a>
+                        <a href="#" class="social-link" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
