@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sample lesson</title>
+   <style>
+.enhanceable_content.tabs > div {
+  display: none;
+  margin-top: 1em;
+}
+
+.enhanceable_content.tabs > div.active {
+  display: block;
+}
+
+.enhanceable_content.tabs ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.enhanceable_content.tabs ul li {
+  display: inline;
+}
+
+.enhanceable_content.tabs ul li a {
+  text-decoration: none;
+  background-color: #eaf7fb;
+  padding: 0.5em 1em;
+  border: 1px solid #b0cdd4;
+  border-radius: 6px;
+  color: #003366;
+  display: inline-block;
+}
+
+.enhanceable_content.tabs ul li a.active {
+  background-color: #2db5e9;
+  color: white;
+}
+</style>
+
+</head>
+<body>
+    <p style="margin-top: 1em; background-color: #eaf7fb; border-left: 6px solid #2db5e9; padding: 1em; font-family: 'Franklin Gothic Book', 'Libre Franklin', sans-serif; font-size: 1.1em;">
+  📋 <strong>This lesson was reviewed for design and accessibility.</strong> 
+  <a href="LessonDesignAnalysis.html" target="_blank" style="color: #2db5e9; text-decoration: none; font-weight: bold;">
+    View the full instructional analysis
+  </a>.
+</p>
+
+    <h1>🔒 CyberSecurity Basics #1 - Common Computer Threats</h1>
+<p style="padding-left: 40px; font-style: italic; color: #444;">🐾 Heads up: This activity (plus quiz) is designed to take about 45 minutes &mdash; but take the time you need. No rush. 🐕✨</p>
+<table style="border-collapse: collapse; border: 3px solid #b0cdd4; font-family: 'Franklin Gothic Book', 'Libre Franklin', sans-serif; color: #000f47; width: 90%; margin-bottom: 2em;">
+    <tbody>
+        <tr style="height: 1px;" aria-hidden="true">
+            <td style="width: 20%;"></td>
+            <td style="width: 20%;"></td>
+            <td style="width: 20%;"></td>
+            <td style="width: 20%;"></td>
+            <td style="width: 20%;"></td>
+        </tr>
+        <tr>
+            <td style="background-color: #2db5e9; border: 3px solid #b0cdd4; text-align: center;" colspan="5">
+                <h2><span style="font-size: 24pt; color: #ecf0f1; font-family: Architects Daughter, Lato Extended, Helvetica Neue, Helvetica, Arial, sans-serif;"><strong>Is antivirus software enough anymore?</strong></span></h2>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: 3px solid #b0cdd4; background-color: #eaf7fb;" colspan="5">
+                <h3 style="font-size: 12pt; padding-left: 20px;"><span aria-hidden="true">📓 </span><strong>Before you begin:</strong></h3>
+                <details style="margin-bottom: 1em;">
+                    <summary style="padding: 10px 20px; background-color: #eaf7fb; cursor: pointer; border-radius: 6px;">🐾 Want to team up? &ndash; Tap to expand</summary>
+                    <ul style="list-style-type: none; padding-left: 100px; line-height: 1.6;">
+                        <li>🧐 <strong>Take 1 minute to think on your own first.</strong></li>
+                        <li>💬 📝 <strong>Then share your ideas with your shouldermate</strong> if you&rsquo;re collabing on this &mdash; or jot it down in your notebook if you&rsquo;re working on your own.</li>
+                        <li>🐾 <strong>Pro move:</strong> Talking it through often sparks ideas you might not have thought of alone.</li>
+                    </ul>
+                </details>
+                <hr style="border: 0; border-top: 2px solid #b0cdd4; width: 60%; margin: 16px auto;" aria-hidden="true" />
+                <p style="padding-left: 40px;">🧠 You&rsquo;ve probably been warned about computer viruses and phishing emails before. But think about this:</p>
+                <p style="padding-left: 80px;">🎮 If someone wanted to mess with your game account, steal your login info, or crash your device, do you think they&rsquo;d try to <em>trick</em> you &mdash; or try to <em>break in</em> through weak spots in the system?</p>
+                <p style="padding-left: 80px;">💡 What kinds of things do you think hackers look for when they go after people&rsquo;s accounts or devices?</p>
+                <p style="padding-left: 80px;">🤔 How confident are you that you&rsquo;d spot a really well-made fake message or scam link? What makes it hard to tell sometimes?</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: 3px solid #b0cdd4; padding: 20px; background-color: #fef3ec; width: 99.964%;" colspan="5">
+                <p><strong>🎯 Mission Briefing:</strong></p>
+                <p style="padding-left: 40px;">The internet isn&rsquo;t all fun and games&mdash;some things are built to trick you or steal your data. Learn the most common threats, how to spot them, and the simple habits that help keep you and your devices safe. 🛡️</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: 3px solid #b0cdd4; text-align: center; vertical-align: middle; width: 99.964%;" colspan="5">
+                <h4><span style="text-decoration: underline; background-color: #eaf7fb;"><strong>📘 What you&rsquo;ll walk away knowing:</strong></span></h4>
+                <p><strong>Identify common computer threats and how they can affect your device or personal information</strong><span><br /></span><span> &rarr; </span><i><span>&ldquo;Know the kinds of attacks that can mess with your stuff or steal your data.&rdquo;</span></i></p>
+                <p><strong>Recognize how to spot suspicious emails, links, and messages that are designed to trick you</strong><span><br /></span><span> &rarr; </span><i><span>&ldquo;Learn the red flags so you don&rsquo;t get tricked online.&rdquo;</span></i></p>
+                <p><strong>Explain basic ways to protect yourself and your devices from malware and other cyber threats</strong><span><br /></span><span> &rarr; </span><i><span>&ldquo;Know the smart habits that keep you and your stuff safe on the internet.&rdquo;</span></i></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: 3px solid #b0cdd4; vertical-align: top; width: 39.9856%;" colspan="2">
+                <h4 style="padding-left: 40px;"><span style="text-decoration: underline; background-color: #eaf7fb;"><strong>🛠️ Toolbelt:</strong></span></h4>
+                <ul>
+                    <li data-start="2496" data-end="2521">Common user-level threats
+                        <ul>
+                            <li data-start="2526" data-end="2543">Viruses / malware</li>
+                            <li data-start="2548" data-end="2556">Phishing</li>
+                            <li data-start="2561" data-end="2585">Suspicious email / links</li>
+                            <li data-start="2590" data-end="2649">Social engineering (including deepfakes &amp; AI-based attacks)</li>
+                            <li data-start="2654" data-end="2692">Spoofing (email / caller ID / website)</li>
+                            <li data-start="2697" data-end="2711">Identity theft</li>
+                            <li data-start="2716" data-end="2724">Spamming</li>
+                        </ul>
+                    </li>
+                    <li data-start="2727" data-end="2750">Safe behaviors &amp; habits
+                        <ul>
+                            <li data-start="2755" data-end="2776">Recognizing red flags</li>
+                            <li data-start="2781" data-end="2814">Protecting device &amp; personal data</li>
+                            <li data-start="2819" data-end="2874">Using security tools (antivirus, MFA, browser settings)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </td>
+            <td style="border: 3px solid #b0cdd4; vertical-align: top; width: 59.9784%;" colspan="3">
+                <details style="margin-bottom: 1em;">
+                    <summary style="padding: 10px 20px; background-color: #eaf7fb; cursor: pointer; border-radius: 6px;">🗣️ <strong>Key Vocabulary</strong> &ndash; Tap to expand</summary>
+                    <table style="width: 100%; border-collapse: collapse; margin-bottom: 1em;">
+                        <thead style="background-color: #eaf7fb;">
+                            <tr>
+                                <th style="padding: 10px; border: 1px solid #b0cdd4;">🧠 Term</th>
+                                <th style="padding: 10px; border: 1px solid #b0cdd4;">📖 Definition</th>
+                                <th style="padding: 10px; border: 1px solid #b0cdd4;">💡 Example Use</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #b0cdd4;">social engineering</td>
+                                <td style="padding: 10px; border: 1px solid #b0cdd4;">A trick that uses human emotions to get someone to give up private info or access.</td>
+                                <td style="padding: 10px; border: 1px solid #b0cdd4;">A scammer pretends to be tech support to get your password&mdash;that&rsquo;s social engineering.</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #b0cdd4;">spoofing</td>
+                                <td style="padding: 10px; border: 1px solid #b0cdd4;">When an attacker makes something fake look real to trick you&mdash;like a fake website or email.</td>
+                                <td style="padding: 10px; border: 1px solid #b0cdd4;">Getting an email that looks like it&rsquo;s from your bank, but isn&rsquo;t, is a spoofing attack.</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #b0cdd4;">SQL injection</td>
+                                <td style="padding: 10px; border: 1px solid #b0cdd4;">A code-based attack where a hacker sneaks commands into a website to break into its database.</td>
+                                <td style="padding: 10px; border: 1px solid #b0cdd4;">If a login form isn&rsquo;t secure, a hacker could use SQL injection to steal usernames and passwords.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </details>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div style="text-align: center; margin: 2em 0;">
+    <h2 id="tabs-top" style="font-size: 24pt; color: #2db5e9; font-family: 'Architects Daughter', Lato, sans-serif; border-bottom: 4px solid #2db5e9; display: inline-block; padding-bottom: 0.3em;">🔽 The lesson is here 🔽</h2>
+</div>
+<div id="tabs-top" class="enhanceable_content tabs" style="font-size: 12pt; font-family: 'Franklin Gothic Book', 'Libre Franklin', sans-serif; color: #000f47;"><br />
+    <ul>
+        <li><a href="#LT1">What Can Go Wrong?</a></li>
+        <li><a href="#LT2">How Hackers Try to Fool You</a></li>
+        <li><a href="#LT3">How You Can Outsmart Them</a></li>
+        <li><a href="#ACT">🐾 Want to team up?</a></li>
+    </ul>
+    <div id="LT1">
+        <h3 style="color: #003366; border-bottom: 3px solid #99c2ff; padding-bottom: 0.3em;">💀 What Can Go Wrong?</h3>
+        <p>Before we dive into how to protect yourself, it helps to know what you're up against. Digital threats come in many flavors &mdash; some try to sneak in quietly, while others go in loud and disruptive. Here&rsquo;s a breakdown of the most common computer threats teens and adults face today:</p>
+        <table style="border-collapse: collapse; width: 100%; margin-top: 1em;">
+            <thead style="background-color: #eaf7fb;">
+                <tr>
+                    <th style="border: 1px solid #b0cdd4; padding: 10px; text-align: left;">🚨 Threat</th>
+                    <th style="border: 1px solid #b0cdd4; padding: 10px; text-align: left;">📖 What It Does</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: #ffffff;">
+                    <td style="border: 1px solid #b0cdd4; padding: 10px;">Virus / Malware</td>
+                    <td style="border: 1px solid #b0cdd4; padding: 10px;">Programs that sneak into your device to damage files, slow things down, or steal data.</td>
+                </tr>
+                <tr style="background-color: #f4fafd;">
+                    <td style="border: 1px solid #b0cdd4; padding: 10px;">Phishing</td>
+                    <td style="border: 1px solid #b0cdd4; padding: 10px;">Fake messages that try to trick you into giving up passwords, credit cards, or personal info.</td>
+                </tr>
+                <tr style="background-color: #ffffff;">
+                    <td style="border: 1px solid #b0cdd4; padding: 10px;">Social Engineering</td>
+                    <td style="border: 1px solid #b0cdd4; padding: 10px;">Hackers pretending to be someone trustworthy to trick you into doing something risky.</td>
+                </tr>
+                <tr style="background-color: #f4fafd;">
+                    <td style="border: 1px solid #b0cdd4; padding: 10px;">Spoofing</td>
+                    <td style="border: 1px solid #b0cdd4; padding: 10px;">Fake websites, emails, or phone numbers made to look real so you&rsquo;ll trust them.</td>
+                </tr>
+                <tr style="background-color: #ffffff;">
+                    <td style="border: 1px solid #b0cdd4; padding: 10px;">Identity Theft</td>
+                    <td style="border: 1px solid #b0cdd4; padding: 10px;">Someone uses your personal info (like SSN or bank info) to pretend to be you and commit fraud.</td>
+                </tr>
+                <tr style="background-color: #f4fafd;">
+                    <td style="border: 1px solid #b0cdd4; padding: 10px;">Spamming</td>
+                    <td style="border: 1px solid #b0cdd4; padding: 10px;">Junk messages that clutter your inbox or contain dangerous links.</td>
+                </tr>
+                <tr style="background-color: #ffffff;">
+                    <td style="border: 1px solid #b0cdd4; padding: 10px;">AI-based Attacks</td>
+                    <td style="border: 1px solid #b0cdd4; padding: 10px;">AI tools that can generate convincing fake emails or automate attacks at scale.</td>
+                </tr>
+                <tr style="background-color: #f4fafd;">
+                    <td style="border: 1px solid #b0cdd4; padding: 10px;">DDoS (Distributed Denial of Service)</td>
+                    <td style="border: 1px solid #b0cdd4; padding: 10px;">A flood of fake traffic that overwhelms a site or service, making it crash or freeze.</td>
+                </tr>
+                <tr style="background-color: #ffffff;">
+                    <td style="border: 1px solid #b0cdd4; padding: 10px;">SQL Injection</td>
+                    <td style="border: 1px solid #b0cdd4; padding: 10px;">Attackers use sneaky code to mess with databases and steal, change, or delete information.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="margin-top: 1.5em;">Each of these threats can mess with your device, your identity, or your peace of mind. The good news? Most of them can be avoided with a little knowledge &mdash; and you&rsquo;re already on your way.</p>
+        <h4 style="margin-top: 2em; color: #003366;">🔍 Deeper Dive: Three Rising Threats</h4>
+        <p><strong>🧠 AI-Based Attacks:</strong> Artificial Intelligence isn&rsquo;t just powering fun tools like chatbots &mdash; it&rsquo;s also helping cybercriminals work faster and smarter. AI can write super convincing fake emails that sound like real people, making phishing harder to spot. It can also scan social media and public data to personalize attacks, so it feels like someone knows you. AI isn&rsquo;t the villain &mdash; but it can be used in villainous ways.</p>
+        <p><strong>🌐 DDoS Attacks:</strong> A Distributed Denial of Service (DDoS) attack is like sending a billion spam calls to a website all at once. The goal? Overload the system so it crashes and becomes unusable. These attacks are often aimed at businesses, game servers, or even schools. They&rsquo;re hard to stop once they start &mdash; kind of like digital stampedes.</p>
+        <p><strong>💾 SQL Injection:</strong> SQL (Structured Query Language) is the language websites use to talk to their databases. A SQL injection attack happens when someone finds a weak point &mdash; like a poorly protected login form &mdash; and slips in harmful code instead of regular data. If it works, the attacker can steal data, erase records, or even take control of the site. Sites that don&rsquo;t properly &ldquo;sanitize&rdquo; input are wide open for this kind of trick.</p>
+        <div style="text-align: center; margin: 2em 0;">
+            <p style="display: inline-block; font-size: 16pt; font-family: 'Architects Daughter', Lato, sans-serif; padding: 0.5em 1em; border-top: 4px solid #2db5e9; border: 2px dashed #2db5e9; background-color: #eaf7fb; color: #2db5e9; margin: 0;">🔼 <a style="color: #2db5e9; text-decoration: none;" href="#tabs-top">Click to return to the Top of the Lesson</a> 🔼</p>
+        </div>
+    </div>
+    <div id="LT2" style="padding: 1em 1.5em; font-family: 'Segoe UI', sans-serif; color: #002b36; line-height: 1.6;">
+        <h3 style="color: #003366; border-bottom: 3px solid #99c2ff; padding-bottom: 0.3em;">🎭 How Hackers Try to Fool You</h3>
+        <p>Hackers don&rsquo;t always break in like action-movie villains. Often, they <em>trick</em> people into handing over access &mdash; no password cracking required. That&rsquo;s where <strong>phishing</strong>, <strong>spoofing</strong>, and <strong>social engineering</strong> come in. These attacks play on emotions like trust, fear, curiosity, or urgency.</p>
+        <h4 style="margin-top: 1em; color: #003366;">🧠 Social Engineering: Hacking the Human</h4>
+        <ul style="margin-left: 1em; padding-left: 1em;">
+            <li><strong>Who:</strong> Hackers or scammers pretending to be someone trustworthy &mdash; like tech support, a friend, or school staff</li>
+            <li><strong>What:</strong> They use lies and emotional manipulation to trick you into doing something risky</li>
+            <li><strong>When:</strong> Often during times of stress or urgency &mdash; like around report cards or tech issues</li>
+            <li><strong>Where:</strong> Emails, phone calls, DMs, or even in person</li>
+            <li><strong>How:</strong> They might say things like &ldquo;I&rsquo;m calling from IT&rdquo; or &ldquo;You need to verify your account now&rdquo;</li>
+        </ul>
+        <h4 style="margin-top: 1em; color: #003366;">📨 Phishing: The Bait You Didn&rsquo;t See Coming</h4>
+        <ul style="margin-left: 1em; padding-left: 1em;">
+            <li><strong>Who:</strong> Cybercriminals pretending to be companies, schools, or apps</li>
+            <li><strong>What:</strong> Fake emails or messages that ask you to click a link or share private info</li>
+            <li><strong>When:</strong> Randomly &mdash; but often around holidays, events, or account activity</li>
+            <li><strong>Where:</strong> Email, text, direct messages, pop-up ads</li>
+            <li><strong>How:</strong> They often copy real logos and language to look official, but the link leads to a scam site</li>
+        </ul>
+        <div style="background-color: #fdf5e6; border-left: 6px solid #ffc107; padding: 1em; margin-top: 1em;">
+            <p style="margin: 0;"><strong>🎣 Pro tip:</strong> If something seems urgent and wants you to click <em>right now</em> or give up info quickly &mdash; stop and think. Real companies don&rsquo;t pressure you like that.</p>
+        </div>
+        <h4 style="margin-top: 1em; color: #003366;">🕵️&zwj;♂️ Spoofing: The Great Disguise</h4>
+        <ul style="margin-left: 1em; padding-left: 1em;">
+            <li><strong>Who:</strong> Hackers posing as familiar people or organizations</li>
+            <li><strong>What:</strong> Fake websites, emails, or caller IDs that look nearly identical to the real thing</li>
+            <li><strong>When:</strong> Anytime &mdash; especially when you're expecting a message or login screen</li>
+            <li><strong>Where:</strong> Login pages, email headers, phone numbers, even Zoom invites</li>
+            <li><strong>How:</strong> They change just one letter or number to trick your brain into trusting it (like support@micr0soft.com)</li>
+        </ul>
+        <h4 style="margin-top: 1.5em; color: #003366;">🚩 Red Flags to Watch For</h4>
+        <ul style="margin-left: 1em; padding-left: 1em;">
+            <li>Emails or messages with weird grammar or spelling mistakes</li>
+            <li>Links that go to strange-looking URLs (hover to check!)</li>
+            <li>Attachments you weren&rsquo;t expecting</li>
+            <li>Urgent or scary messages (&ldquo;Your account will be deleted!&rdquo;)</li>
+            <li>Too-good-to-be-true offers</li>
+        </ul>
+        <p>If it feels off, it probably is. Your best defense is a pause and a little skepticism. When in doubt &mdash; don&rsquo;t click.</p>
+        <h4 style="margin-top: 2em; color: #003366;">🕹️ Try It: Who&rsquo;s Trying to Fool You?</h4>
+        <div style="background-color: #f7faff; border-left: 6px solid #66b2ff; padding: 1em; margin-bottom: 1em;">
+            <p>Read the scenario. Think for a moment about which trick <strong>you</strong> think is being used. Click to see which trick the Cyber-Safe identified.</p>
+        </div>
+        <p><strong>1.</strong> You get a DM from someone claiming to be your teacher, asking you to click a link to &ldquo;verify your grades.&rdquo;</p>
+        <details>
+            <summary style="cursor: pointer;">Check</summary>
+            Social Engineering
+        </details>
+        <p><strong>2.</strong> An email says it&rsquo;s from your bank. It looks official, but the address is something like support@b&aacute;nkalert.com and it wants your password.</p>
+        <details>
+            <summary style="cursor: pointer;">Check</summary>
+            Spoofing
+        </details>
+        <p><strong>3.</strong> You get a pop-up ad saying you won a free iPhone &mdash; all you need to do is enter your Apple ID and password.</p>
+        <details>
+            <summary style="cursor: pointer;">Check</summary>
+            Phishing
+        </details>
+        <div style="text-align: center; margin: 2em 0;">
+            <p style="display: inline-block; font-size: 16pt; font-family: 'Architects Daughter', Lato, sans-serif; padding: 0.5em 1em; border-top: 4px solid #2db5e9; border: 2px dashed #2db5e9; background-color: #eaf7fb; color: #2db5e9; margin: 0;">🔼 <a style="color: #2db5e9; text-decoration: none;" href="#tabs-top">Click to return to the Top of the Lesson</a> 🔼</p>
+        </div>
+    </div>
+    <div id="LT3" style="padding: 1em 1.5em; font-family: 'Segoe UI', sans-serif; color: #002b36; line-height: 1.6;">
+        <h3 style="color: #003366; border-bottom: 3px solid #99c2ff; padding-bottom: 0.3em;">🛡️ How You Can Outsmart Them</h3>
+        <p>You don&rsquo;t need to be a tech genius to stay safe online. Most cyber attacks count on people being too busy, too trusting, or too rushed to notice red flags. That&rsquo;s why simple habits go a long way toward protecting your devices and personal info.</p>
+        <h4 style="margin-top: 1em; color: #003366;">🔐 Smart Habits That Keep You Safe</h4>
+        <ul style="margin-left: 1em; padding-left: 1em; list-style-type: none;">
+            <li>🔑 <strong>Use strong passwords</strong> &ndash; Make them long, unpredictable, and different for each account. Use a password manager if you can.</li>
+            <li>🔐 <strong>Use a password manager</strong> &ndash; These apps store all your passwords securely so you don&rsquo;t have to memorize them. One strong master password unlocks them all.</li>
+            <li>⚠️ <strong>Don&rsquo;t click sketchy links</strong> &ndash; If something feels off, don&rsquo;t touch it. Hover to preview where a link goes before clicking.</li>
+            <li>🔄 <strong>Update your software</strong> &ndash; Updates often fix security holes. Keep your apps, browsers, and operating system current.</li>
+            <li>✅ <strong>Stick with trusted sources</strong> &ndash; Only download apps or files from official app stores or known websites.</li>
+            <li>🙊 <strong>Think before you share</strong> &ndash; The less personal info you post or message, the harder it is to target you.</li>
+            <li>🔒 <strong>Use multi-factor authentication (MFA)</strong> &ndash; If a site lets you add extra login protection, turn it on.</li>
+        </ul>
+        <h4 style="margin-top: 1.5em; color: #003366;">📚 Passwords, MFA, and Password Managers - A Deeper Dive into Why These Three Matter 📚</h4>
+        <p><strong>Passwords</strong> are like the lock on your digital front door. If your password is "1234" or "password," it&rsquo;s like leaving the door wide open. The best passwords are long, random, and unique to each account.</p>
+        <p>Most people your age have only had a few accounts so far, and many have reused the same password for years. But you&rsquo;re about to open a lot more accounts &mdash; for school, social, shopping, banking, jobs &mdash; and if you reuse the same password across them, one breach means <em>everything</em> is at risk.</p>
+        <details>
+            <summary style="cursor: pointer; color: #003366; margin-top: 1em;">🎲 Make Your Own Passphrase Grid (Click to Expand)</summary>
+            <div style="margin-top: 1em;">
+                <p>You can create strong but memorable passwords using short random words. Here's how to do it:</p>
+                <ol style="margin-left: 1em; padding-left: 1em;">
+                    <li>Make a 6&times;6 grid of random short words &mdash; mix in numbers, symbols, and capital letters.</li>
+                    <li>Label the rows 1&ndash;6 and columns A&ndash;F.</li>
+                    <li>Roll two dice: one for the row, one for the column.</li>
+                    <li>Repeat this 2&ndash;3 times to get a passphrase made of random words.</li>
+                </ol>
+                <p><strong>Example Grid:</strong></p>
+                <table style="border-collapse: collapse; width: 100%; max-width: 600px;">
+                    <thead style="background-color: #eaf7fb;">
+                        <tr>
+                            <th></th>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>C</th>
+                            <th>D</th>
+                            <th>E</th>
+                            <th>F</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Jump!</td>
+                            <td>Echo2</td>
+                            <td>Cat#</td>
+                            <td>Soda</td>
+                            <td>7Rain</td>
+                            <td>Zap$</td>
+                        </tr>
+                        <tr style="background-color: #f4fafd;">
+                            <td>2</td>
+                            <td>Lime</td>
+                            <td>P@ck</td>
+                            <td>Blue!</td>
+                            <td>Key9</td>
+                            <td>Mega</td>
+                            <td>Run3</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Sun#</td>
+                            <td>Rock</td>
+                            <td>W1nd</td>
+                            <td>5Go</td>
+                            <td>Pop!</td>
+                            <td>Bin$</td>
+                        </tr>
+                        <tr style="background-color: #f4fafd;">
+                            <td>4</td>
+                            <td>Duck</td>
+                            <td>Net*</td>
+                            <td>Egg!</td>
+                            <td>Volt</td>
+                            <td>R3d</td>
+                            <td>Trek</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Quiz</td>
+                            <td>Leaf</td>
+                            <td>W@ke</td>
+                            <td>Zip2</td>
+                            <td>Bang</td>
+                            <td>F1x</td>
+                        </tr>
+                        <tr style="background-color: #f4fafd;">
+                            <td>6</td>
+                            <td>Ant#</td>
+                            <td>Yeti</td>
+                            <td>N0va</td>
+                            <td>Rope</td>
+                            <td>Desk</td>
+                            <td>Sky!</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p><strong>Sample Passphrase:</strong> <code>RockR3dSky!</code> or <code>Echo2Key9Duck</code></p>
+                <p>These are hard to guess, easy to roll, and simple to remember &mdash; and they beat "banana123" every time.</p>
+            </div>
+        </details>
+        <p><strong>Password managers</strong> are like a secure keyring. They keep track of all your complicated passwords, so you only have to remember one super-strong master password.</p>
+        <p><strong>Free options:</strong> Bitwarden (free), Chrome&rsquo;s built-in password manager (free), iCloud Keychain (free on Apple devices). Paid options like 1Password add bonus features, but the free ones are good enough for most students.</p>
+        <p><strong>Can&rsquo;t use a password manager?</strong> Even writing your passwords down in a notes app &mdash; or an actual notebook &mdash; is <em>still safer</em> than using one password everywhere. Old-school password books still exist. And for people serious about privacy, some even keep password books in safes or use air-gapped (never connected to internet) devices.</p>
+        <p><strong>Multi-factor authentication (MFA)</strong> is like adding an alarm system. Even if someone gets your password, they&rsquo;d still need a second code sent to your phone or app to break in.</p>
+        <div style="background-color: #fff8dc; border-left: 6px solid #f0ad4e; padding: 1em; margin-top: 1em;">
+            <p style="margin: 0;"><strong>📱 Tradeoff Tip:</strong> Using your phone for MFA is great &mdash; unless you lose it or it&rsquo;s stolen. Always add a backup method (like backup codes or an authenticator app) just in case.</p>
+        </div>
+        <h4 style="margin-top: 1.5em; color: #003366;">🧠 Build Your Cyber Street Smarts</h4>
+        <p>Good cyber hygiene is like wearing a seatbelt &mdash; it doesn&rsquo;t guarantee nothing bad will happen, but it massively lowers your risk. Every small smart habit makes a difference.</p>
+        <div style="background-color: #eaf7fb; border-left: 6px solid #3399cc; padding: 1em; margin-top: 1em;">
+            <p style="margin: 0;"><strong>💡 Quick Tip:</strong> If you're ever unsure about a link, a message, or an app &mdash; ask someone. Caution beats cleanup every time.</p>
+        </div>
+        <hr />
+        <h4 style="margin-top: 2em; color: #003366;">🕹️ Try It: What&rsquo;s the Smart Move?</h4>
+        <div style="background-color: #f7faff; border-left: 6px solid #66b2ff; padding: 1em; margin-bottom: 1em;">
+            <p>Read the scenario. Think for a moment about what <strong>you</strong> would do. Click to see how the Cyber-Safe would handle it.</p>
+        </div>
+        <p><strong>1.</strong> You get a message that your Instagram account is &ldquo;about to be deleted&rdquo; with a link to fix it.</p>
+        <details>
+            <summary style="cursor: pointer;">Check</summary>
+            Don&rsquo;t click. Go directly to the real Instagram app or website to check &mdash; this message is likely phishing.
+        </details>
+        <p><strong>2.</strong> Your phone keeps asking to update its operating system, but you&rsquo;ve been ignoring it.</p>
+        <details>
+            <summary style="cursor: pointer;">Check</summary>
+            Update it! Software updates fix security issues that hackers can exploit.
+        </details>
+        <p><strong>3.</strong> You&rsquo;re setting up a new account. It asks for a password. Which one is best?</p>
+        <details>
+            <summary style="cursor: pointer;">Check</summary>
+            A long, unique password with a mix of words, symbols, and numbers &mdash; not something reused or easy to guess.
+        </details>
+        <div style="text-align: center; margin: 2em 0;">
+            <p style="display: inline-block; font-size: 16pt; font-family: 'Architects Daughter', Lato, sans-serif; padding: 0.5em 1em; border-top: 4px solid #2db5e9; border: 2px dashed #2db5e9; background-color: #eaf7fb; color: #2db5e9; margin: 0;">🔼 <a style="color: #2db5e9; text-decoration: none;" href="#tabs-top">Click to return to the Top of the Lesson</a> 🔼</p>
+        </div>
+    </div>
+    <div id="ACT" style="padding: 1em 1.5em; font-family: 'Segoe UI', sans-serif; color: #002b36; line-height: 1.6;">
+        <h3 style="color: #003366; border-bottom: 3px solid #99c2ff; padding-bottom: 0.3em;">🎲 Optional Activity: Cyber &ldquo;Would You Rather&hellip;?&rdquo; Deck</h3>
+        <p>You&rsquo;ve learned how hackers try to fool you &mdash; and how to protect yourself. Now it&rsquo;s your turn to flip the script and make some brain-bending dilemmas.</p>
+        <p>Grab some index cards or scrap paper and create your own **&ldquo;Would You Rather&hellip;&rdquo; Cyber Edition** game. Each card should pose two online choices &mdash; both tempting or tricky &mdash; and spark some debate.</p>
+        <p><strong>🎯 Aim for 6 cards</strong> &mdash; that&rsquo;s about a 10-minute game, just right for a quick reset. You and your partner can each make 3 and then trade off sharing. Feeling confident? Each of you make 6, then grab some nearby classmates and test your decks out!</p>
+        <h4 style="margin-top: 1em; color: #003366;">🃏 Example Card Ideas</h4>
+        <ul style="margin-left: 1em; padding-left: 1em;">
+            <li><strong>Would you rather...</strong> Use the same password for everything... <em>or</em> never remember any of your passwords?<details>
+                    <summary style="cursor: pointer;">Check</summary>
+                    This is a strong "Would You Rather" card because both options are relatable &mdash; and both come with downsides. The fun is in arguing which you'd *rather* live with, not picking a perfect answer.
+                </details>
+            </li>
+            <li><strong>Would you rather...</strong> Click on a &ldquo;free gift&rdquo; email... <em>or</em> give your login to a classmate?<details>
+                    <summary style="cursor: pointer;">Check</summary>
+                    This card works well because both options feel possible &mdash; and maybe even tempting. Avoid clue words like &ldquo;sketchy&rdquo; that tip to a "right answer".&nbsp; There are no right answers.&nbsp; The goal is to spark conversation and second guesses &mdash; like a real-world moment would.
+                </details>
+            </li>
+            <li><strong>Would you rather...</strong> Use your birthday as your password... <em>or</em> let your browser remember all your logins without a master password?<details>
+                    <summary style="cursor: pointer;">Check</summary>
+                    This is a well-designed card because both options seem harmless at first glance, but each one has hidden risk. That balance makes it fun to debate &mdash; which is what makes a "Would You Rather..." card work as a game tool.
+                </details>
+            </li>
+        </ul>
+        <h4 style="margin-top: 1em; color: #003366;">✨ Creative Bonuses</h4>
+        <ul style="margin-left: 1em; padding-left: 1em;">
+            <li>Decorate your cards with doodles, emojis, or fake app logos</li>
+            <li>Use color to show which option is safer &mdash; or just more chaotic</li>
+            <li>Add a wild card with a totally absurd digital dilemma</li>
+            <li><em>Or your own idea!</em></li>
+        </ul>
+        <div style="background-color: #f0fff4; border-left: 6px solid #33cc99; padding: 1em; margin-top: 1em;">
+            <p style="margin: 0;"><strong>🧺 Want to share your deck?</strong> Put your deck in the basket at the front of the room and we&rsquo;ll keep it as a class-approved brain break game anyone can use this year!</p>
+        </div>
+        <div style="background-color: #fffbe6; border-left: 6px solid #ffcc00; padding: 1em; margin-top: 1em;">
+            <p style="margin: 0;"><strong>🚫 Pro Tip:</strong> Don&rsquo;t include personal info, usernames, or real account details in your cards. Cyber safety starts with smart sharing.</p>
+        </div>
+        <div style="text-align: center; margin: 2em 0;">
+            <p style="display: inline-block; font-size: 16pt; font-family: 'Architects Daughter', Lato, sans-serif; padding: 0.5em 1em; border-top: 4px solid #2db5e9; border: 2px dashed #2db5e9; background-color: #eaf7fb; color: #2db5e9; margin: 0;">🔼 <a style="color: #2db5e9; text-decoration: none;" href="#tabs-top">Click to return to the Top of the Lesson</a> 🔼</p>
+        </div>
+    </div>
+</div>
+<table style="border-collapse: collapse; border: 3px solid #b0cdd4; font-family: 'Franklin Gothic Book', 'Libre Franklin', sans-serif; color: #000f47; width: 90%; margin: 2em 0;">
+    <tbody>
+        <tr style="height: 1px;" aria-hidden="true">
+            <td style="width: 20%;"></td>
+            <td style="width: 20%;"></td>
+            <td style="width: 20%;"></td>
+            <td style="width: 20%;"></td>
+            <td style="width: 20%;"></td>
+        </tr>
+        <tr>
+            <td style="border: 3px solid #b0cdd4; padding: 20px; background-color: #eaf7fb; text-align: center;" colspan="5">
+                <h2><span style="text-decoration: underline; background-color: #eaf7fb; font-size: 14pt;"><span aria-hidden="true">🔍 </span><strong>Quick Recap </strong></span></h2>
+                <p>✅ I can list common computer threats and explain how they affect devices or personal data</p>
+                <p>✅ I can spot suspicious emails, links, and messages designed to trick users</p>
+                <p>✅ I can describe basic ways to protect devices and personal information from cyber threats</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: 3px solid #b0cdd4; vertical-align: top;" colspan="2">
+                <h3 style="font-size: 12pt; padding-left: 20px;"><span style="text-decoration: underline; background-color: #eaf7fb;"><span aria-hidden="true">▶️ </span><strong>Video Links:</strong></span></h3>
+                <ul style="list-style-type: none; padding-left: 20px;">
+                    <li>📺 <em>"<a class="inline_disabled" href="https://www.youtube.com/watch?v=KRa-N8NYkWI" target="_blank" rel="noopener">Cybersecurity 101 - Unveiling the Basics</a>"</em> (4:22 min)</li>
+                    <li>📺 <em>"<a class="inline_disabled" href="https://www.youtube.com/watch?v=ey4dXseAODE" target="_blank" rel="noopener">MASTER the Basics of Cybersecurity in 5 MINS! Animated</a>"</em> (4:25 min)</li>
+                    <li>📺 <em>"<a class="inline_disabled" href="https://www.youtube.com/watch?v=vKPGZHoHX8k" target="_blank" rel="noopener">How Hackers Steal Passwords: 5 Attack Methods Explained</a>"</em> (13:06 min)</li>
+                    <li>📺 <em>"<a class="inline_disabled" href="https://www.youtube.com/watch?v=57Ctmo92GMQ" target="_blank" rel="noopener">How To Spot A Phishing Attack In Under 3 Minutes</a>"</em> (2:49 min)</li>
+                    <li></li>
+                </ul>
+            </td>
+            <td style="border: 3px solid #b0cdd4; vertical-align: top;" colspan="3">
+                <h3 style="font-size: 12pt; padding-left: 20px;"><span style="text-decoration: underline; background-color: #eaf7fb;">💧 <strong>Knowledge Drop:</strong></span></h3>
+                <p style="padding-left: 40px;">Common Computer Threats Quiz</p>
+                <details style="margin-bottom: 1em;">
+                    <summary style="padding: 10px 20px; background-color: #eaf7fb; cursor: pointer; border-radius: 6px;">🐾 Want to team up? &ndash; Tap to expand</summary>
+                    <ul style="list-style-type: none; padding-left: 40px; line-height: 1.6;">
+                        <li>📝 You can discuss the quiz questions with your shouldermate &mdash; but take your own notes and be sure to submit your own answers.&nbsp;</li>
+                        <li>💡 Pro tip: Explain your reasoning out loud to each other as you work &mdash; teaching it helps you remember it!</li>
+                        <li>🎯 Goal: The final answer you submit should reflect <em>your own understanding</em> &mdash; not just what your partner said. If you disagree, that&rsquo;s a great learning moment &mdash; talk it through first!</li>
+                    </ul>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: #2db5e9; border: 3px solid #b0cdd4; text-align: left; padding-left: 15px; padding-right: 40px;" colspan="5">
+                <h3 style="font-size: 24pt; color: #ecf0f1; font-family: 'Architects Daughter', 'Lato Extended', 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align: left;"><strong>👀 Explore more if you're curious!</strong></h3>
+                <blockquote>
+                    <p style="text-align: left;"><strong>🤖 If phishing tricks people into giving up personal info&hellip; is a social media just phishing you more politely?</strong><br />&rarr; What happens when platforms *optimize for engagement* &mdash; but not your safety or well-being? How do the algorithms harvest data, shape your feed, and nudge your behavior without ever <em>asking for permission</em>? A phishing scam is trying to steal your credentials. What are attention-engineered feeds stealing? Can you really opt out of being influenced? Who is profiting from your voluntary disclosures online?</p>
+                    <p><strong>Curious? Explore...</strong></p>
+                    <ul>
+                        <li><em>algorithmic manipulation on social media</em> &rarr; how your feed is shaped to keep you scrolling</li>
+                        <li><em>dark patterns in UI/UX</em> &rarr; tricks that get you to click, share, or buy without realizing it</li>
+                        <li><em>engagement vs safety trade-offs</em> &rarr; what platforms prioritize and why</li>
+                        <li><em>terms of service and consent</em> &rarr; what you&rsquo;re really agreeing to when you sign up</li>
+                        <li><em>data harvesting in recommendation systems</em> &rarr; what your clicks reveal and who uses that data</li>
+                    </ul>
+                </blockquote>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div style="margin-top: 25px; font-style: italic; color: #555;">[05/24-D3-S1.1] &mdash; You&rsquo;ve just leveled up your cybersecurity instincts. Now you don&rsquo;t just use tech&mdash;you protect it. 🔐 Stay sharp, stay safe.</div>
+<hr>
+ <footer style="margin-top: 4em; font-size: 0.9em; color: #444; border-top: 1px solid #ccc; padding-top: 1em;">
+    <p style="font-style: italic;">🧩 Quiet links for reference:</p>
+    <ul style="list-style-type: none; padding-left: 0;">
+      <li>🌐 <a href="index.html" target="_blank" style="color: #2db5e9; text-decoration: none;">
+  Sample Student Portfolio — Public, Safe, and Privacy-Aware
+</a></li>
+ <li>📝 <a href="LessonDesignAnalysis.html" target="_blank" style="color: #2db5e9; text-decoration: none;">Analysis of the Lesson</a></li>
+    </ul>
+  </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const tabContainers = document.querySelectorAll(".enhanceable_content.tabs");
+
+  tabContainers.forEach(container => {
+    const tabLinks = container.querySelectorAll("ul li a");
+    const tabPanels = container.querySelectorAll("div[id]");
+
+    // Set first tab as active by default
+    if (tabLinks.length && tabPanels.length) {
+      tabLinks[0].classList.add("active");
+      tabPanels[0].classList.add("active");
+    }
+
+    tabLinks.forEach(link => {
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        const targetId = this.getAttribute("href").substring(1);
+        const targetPanel = container.querySelector(`#${targetId}`);
+
+        // Remove active from all tabs/panels
+        tabLinks.forEach(l => l.classList.remove("active"));
+        tabPanels.forEach(panel => panel.classList.remove("active"));
+
+        // Activate current
+        this.classList.add("active");
+        if (targetPanel) targetPanel.classList.add("active");
+      });
+    });
+  });
+});
+</script>
+
+</body>
+</html>
