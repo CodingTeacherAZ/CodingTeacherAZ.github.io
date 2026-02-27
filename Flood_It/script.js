@@ -123,8 +123,12 @@
       btn.type = "button";
       btn.className = "swatch";
       btn.style.background = hex;
-      btn.title = `Choose color ${colorIndex + 1}`;
-      btn.setAttribute("aria-label", `Choose color ${colorIndex + 1}`);
+      const keyNumber = colorIndex + 1;
+
+      btn.title = `Choose color ${keyNumber} (Press ${keyNumber})`;
+      btn.setAttribute("aria-label", `Choose color ${keyNumber}`);
+
+      btn.innerHTML = `<span class="swatch-key">${keyNumber}</span>`;
       btn.dataset.color = String(colorIndex);
 
       // Disallow picking the current flooded color
