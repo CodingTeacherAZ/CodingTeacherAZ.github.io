@@ -157,10 +157,21 @@ html, body {
   cursor: pointer;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
   transition: transform 120ms ease, filter 120ms ease, opacity 120ms ease;
+  position: relative;
+  font-weight: 600;
 }
 .swatch:hover { transform: translateY(-2px); filter: brightness(1.05); }
 .swatch:active { transform: translateY(0px); }
 .swatch[aria-disabled="true"] { opacity: 0.45; cursor: not-allowed; }
+.swatch-key {
+  position: absolute;
+  bottom: 6px;
+  right: 8px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
 
 .footer {
   text-align: center;
