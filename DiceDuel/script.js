@@ -14,6 +14,7 @@ const name0El = document.getElementById('name--0');
 const name1El = document.getElementById('name--1');
 
 const diceEl = document.getElementById('dice');
+const diceCubeEl = document.getElementById('dice-cube');
 const btnNew = document.getElementById('btn-new');
 const btnRoll = document.getElementById('btn-roll');
 const btnHold = document.getElementById('btn-hold');
@@ -21,17 +22,9 @@ const btnHold = document.getElementById('btn-hold');
 const winnerModal = document.getElementById('winner-modal');
 const winnerNameEl = document.getElementById('winner-name');
 
-// Dice faces configuration
-const diceFaces = {
-    1: '⚀',
-    2: '⚁',
-    3: '⚂',
-    4: '⚃',
-    5: '⚄',
-    6: '⚅'
-};
 
-// Sound effects (using Web Audio API for modern appeal)
+
+// Sound effects 
 const playSound = (frequency, duration = 100) => {
     if (typeof AudioContext !== 'undefined' || typeof webkitAudioContext !== 'undefined') {
         const audioContext = new (AudioContext || webkitAudioContext)();
@@ -123,23 +116,68 @@ const switchPlayer = () => {
 };
 
 // Animate dice roll
-const animateDiceRoll = (finalValue) => {
-    const diceNumber = diceEl.querySelector('.dice-number');
-    diceEl.classList.add('rolling');
+
+// const animateDiceRoll = (finalValue) => {
+//     diceEl.classList.add('rolling');
     
-    let rollCount = 0;
-    const rollInterval = setInterval(() => {
-        const randomValue = Math.floor(Math.random() * 6) + 1;
-        diceNumber.textContent = diceFaces[randomValue];
-        rollCount++;
+//     let rollCount = 0;
+//     const rollInterval = setInterval(() => {
+//         const randomValue = Math.floor(Math.random() * 6) + 1;
+//         diceEl.src = `dice-${randomValue}.png`;
+//         rollCount++;
         
-        if (rollCount >= 10) {
-            clearInterval(rollInterval);
-            diceNumber.textContent = diceFaces[finalValue];
-            diceEl.classList.remove('rolling');
-        }
-    }, 50);
+//         if (rollCount >= 10) {
+//             clearInterval(rollInterval);
+//             diceEl.src = `dice-${finalValue}.png`;
+//             diceEl.classList.remove('rolling');
+//         }
+//     }, 50);
+// };
+
+// Maps dice value -> cube rotation (X, Y) that brings that face to the front
+const faceRotation = {
+  1: { x: 0,   y: 0   },   // front
+  2: { x: 0,   y: -90 },   // right -> front
+  3: { x: -90, y: 0   },   // top -> front
+  4: { x: 90,  y: 0   },   // bottom -> front
+  5: { x: 0,   y: 90  },   // left -> front
+  6: { x: 0,   y: 180 }    // back -> front
 };
+
+let spinX = 0;
+let spinY = 0;
+
+const animateDiceRoll = (finalValue) => {
+  diceEl.classList.add('rolling');
+
+  // quick “random tumbling” phase
+  let ticks = 0;
+  const rollInterval = setInterval(() => {
+    spinX += 90;
+    spinY += 90;
+    diceCubeEl.style.transform = `rotateX(${spinX}deg) rotateY(${spinY}deg)`;
+    ticks++;
+
+    if (ticks >= 10) {
+      clearInterval(rollInterval);
+
+      // snap to the final face with a smoother transition
+      const { x, y } = faceRotation[finalValue];
+
+      // add extra full spins so it feels like a real roll (optional)
+      const extraX = 360 * 2;
+      const extraY = 360 * 2;
+
+      diceEl.classList.remove('rolling');
+      diceCubeEl.style.transform = `rotateX(${extraX + x}deg) rotateY(${extraY + y}deg)`;
+
+      // keep internal state aligned
+      spinX = extraX + x;
+      spinY = extraY + y;
+    }
+  }, 60);
+};
+
 
 // Add number animation
 const animateScore = (element, newValue) => {
@@ -535,3 +573,4 @@ originalBtnHold.addEventListener('click', () => {
 function goHome() {
   window.location.href = "index.html"; // or any home path
 };
+
