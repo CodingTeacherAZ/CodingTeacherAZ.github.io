@@ -1,7 +1,7 @@
 // app.js
 (() => {
   /**
-   * Flood It (single-level POC)
+   * Flood It - single level for now
    * - Board starts at top-left
    * - Each move chooses a new color and floods connected region from top-left
    * - Goal: entire board becomes one color
