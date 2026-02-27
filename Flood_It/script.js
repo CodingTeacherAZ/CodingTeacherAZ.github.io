@@ -1,8 +1,7 @@
-
 // app.js
 (() => {
   /**
-   * Flood It - single level for now
+   * Flood It (single-level POC)
    * - Board starts at top-left
    * - Each move chooses a new color and floods connected region from top-left
    * - Goal: entire board becomes one color
@@ -19,6 +18,7 @@
       "#a855f7", // purple
       "#14b8a6", // teal
     ],
+    // Optional: scale cells based on board size / viewport (simple and safe)
     autoCellSize: true,
   };
 
@@ -32,10 +32,10 @@
   };
 
   /** Game state */
-  let grid = []; //colors
+  let grid = []; // color indexes
   let moves = 0;
   let inPlay = true;
-  let floodedSet = new Set(); // indices in flooded region
+  let floodedSet = new Set(); // indices currently in flooded region
   const bestKey = `floodit_best_${CONFIG.rows}x${CONFIG.cols}_${CONFIG.colors.length}`;
 
   function idx(r, c) {
@@ -165,15 +165,14 @@
   }
 
   /**
-   * After recoloring flooded region, expand region into adjacent cells
-   * that match the new flooded color
-   * repeat until stable
+   * After recoloring flooded region, expand region by absorbing adjacent cells
+   * that match the new flooded color (repeat until stable).
    */
   function expandFloodedSetFromCurrentColor() {
     const targetColor = grid[idx(0, 0)];
     const queue = [];
 
-
+    // seed queue with all flooded cells
     for (const i of floodedSet) {
       const r = Math.floor(i / CONFIG.cols);
       const c = i % CONFIG.cols;
@@ -211,8 +210,7 @@
       grid[i] = chosenColor;
     }
 
-    // Flood color changed
-    // Expand region into adjacent chosenColor cells
+    // Flood color changed, so expand region to include adjacent chosenColor cells
     expandFloodedSetFromCurrentColor();
 
     setMoves(moves + 1);
@@ -232,7 +230,8 @@
   function maybeAutoCellSize() {
     if (!CONFIG.autoCellSize) return;
 
-    // Simple responsive sizing
+    // Simple responsive sizing: choose a cell size that fits comfortably
+    // within the board container (approx), clamped to a reasonable range.
     const padding = 64; // container padding/margins estimate
     const maxWidth = Math.min(window.innerWidth, 980) - padding;
     const maxHeight = window.innerHeight - 320; // leave room for headers/controls
@@ -271,7 +270,7 @@
     maybeAutoCellSize();
   });
 
-  // Keyboard support
+  // Keyboard support: number keys 1..N select palette
   window.addEventListener("keydown", (e) => {
     if (!inPlay) return;
     const n = Number(e.key);
