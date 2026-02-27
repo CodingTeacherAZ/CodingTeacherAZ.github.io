@@ -1,4 +1,12 @@
 
+// app.js
+(() => {
+  /**
+   * Flood It - single level for now
+   * - Board starts at top-left
+   * - Each move chooses a new color and floods connected region from top-left
+   * - Goal: entire board becomes one color
+   */
 
   const CONFIG = {
     rows: 14,
