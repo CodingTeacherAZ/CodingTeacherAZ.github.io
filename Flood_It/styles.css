@@ -1,0 +1,175 @@
+/* styles.css */
+:root {
+  --bg: #0b1220;
+  --panel: #111a2c;
+  --panel2: #0f1729;
+  --text: #e8edf7;
+  --muted: #a9b4cc;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --radius: 16px;
+
+  --cell-gap: 3px;
+  --cell-size: 30px; /* default; JS can scale via CSS variable if desired */
+}
+
+* { box-sizing: border-box; }
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+    "Segoe UI Emoji";
+  background: radial-gradient(1200px 800px at 20% 10%, #132046 0%, var(--bg) 55%);
+  color: var(--text);
+}
+
+.app {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  gap: 16px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  background: linear-gradient(180deg, var(--panel), var(--panel2));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  align-items: center;
+}
+
+.titleblock h1 {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 0.3px;
+}
+.subtitle {
+  margin: 6px 0 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.stat {
+  min-width: 88px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.stat .label {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+}
+.stat .value {
+  display: block;
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+.btn {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  cursor: pointer;
+  transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+}
+.btn:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+.btn:active { transform: translateY(0px); }
+
+.boardWrap {
+  padding: 16px;
+  background: linear-gradient(180deg, var(--panel), var(--panel2));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: grid;
+  place-items: center;
+}
+
+.board {
+  display: grid;
+  gap: var(--cell-gap);
+  user-select: none;
+  touch-action: manipulation;
+  outline: none;
+}
+
+.cell {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12);
+}
+
+.controls {
+  padding: 16px;
+  background: linear-gradient(180deg, var(--panel), var(--panel2));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 10px;
+}
+
+.paletteHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+.hint {
+  color: var(--muted);
+  font-size: 13px;
+}
+.status {
+  font-size: 13px;
+  color: #c7ffd1;
+}
+
+.palette {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.swatch {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+  transition: transform 120ms ease, filter 120ms ease, opacity 120ms ease;
+}
+.swatch:hover { transform: translateY(-2px); filter: brightness(1.05); }
+.swatch:active { transform: translateY(0px); }
+.swatch[aria-disabled="true"] { opacity: 0.45; cursor: not-allowed; }
+
+.footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 4px 0 0 0;
+}
+
+@media (max-width: 520px) {
+  :root { --cell-size: 22px; --cell-gap: 2px; }
+  .topbar { flex-direction: column; align-items: stretch; }
+  .stats { justify-content: space-between; }
+}
