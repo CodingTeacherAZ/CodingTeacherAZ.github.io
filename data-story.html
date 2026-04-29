@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Story — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="data-story-styling.css"
+</head>
+<body>
+<div class="page-wrap">
+
+  <nav class="top-nav">
+    <a href="index.html" class="back-link">← Portfolio</a>
+    <div class="nav-divider"></div>
+    <span class="page-id">Data Story 02</span>
+  </nav>
+
+  <!-- 1. HERO -->
+  <section class="hero">
+    <span class="unit-eyebrow">Data Story</span>
+    <h1 class="unit-title">Improving Debugging Accuracy<br>Through Error Analysis Cycles</h1>
+    <div class="hero-body">
+      <p class="hero-claim">Targeted instructional adjustments based on formative data increased debugging proficiency by 41% across two instructional cycles.</p>
+      <div class="cycle-badge">
+        <div class="cycle-step">
+          <span class="cycle-num">01</span>
+          <span class="cycle-text">Problem identified</span>
+          <span class="cycle-arrow">↓</span>
+        </div>
+        <div class="cycle-step">
+          <span class="cycle-num">02</span>
+          <span class="cycle-text">Data collected</span>
+          <span class="cycle-arrow">↓</span>
+        </div>
+        <div class="cycle-step">
+          <span class="cycle-num">03</span>
+          <span class="cycle-text">Instruction adjusted</span>
+          <span class="cycle-arrow">↓</span>
+        </div>
+        <div class="cycle-step">
+          <span class="cycle-num">04</span>
+          <span class="cycle-text">Outcome measured</span>
+          <span class="cycle-arrow">↓</span>
+        </div>
+        <div class="cycle-step">
+          <span class="cycle-num">05</span>
+          <span class="cycle-text">Pattern transferred</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. PROBLEM -->
+  <section class="problem-section">
+    <div class="section-label"><span>The Problem</span></div>
+    <div class="problem-layout">
+      <ul class="problem-bullets">
+        <li class="problem-bullet">
+          <div class="bullet-dot"></div>
+          <span class="bullet-text"><strong>Students could write code but could not fix it.</strong> 68% produced logic errors they were unable to self-identify or resolve without direct teacher intervention.</span>
+        </li>
+        <li class="problem-bullet">
+          <div class="bullet-dot"></div>
+          <span class="bullet-text"><strong>Visible on every multi-step task.</strong> Error rates spiked at the debugging stage — not at concept introduction — indicating a gap in process skill, not content knowledge.</span>
+        </li>
+        <li class="problem-bullet">
+          <div class="bullet-dot"></div>
+          <span class="bullet-text"><strong>It blocked project completion.</strong> Students who could not debug independently stalled at stage 3 of 5, compressing time on later, higher-order work.</span>
+        </li>
+      </ul>
+      <div class="problem-spotlight">
+        <span class="spotlight-label">Students unable to self-debug</span>
+        <span class="spotlight-stat">68%</span>
+        <p class="spotlight-desc">Measured at the start of week two via a structured debugging task administered before any direct instruction on error analysis.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. THE DATA -->
+  <section class="data-section">
+    <div class="section-label"><span>The Data</span></div>
+    <div class="data-layout">
+      <div class="data-table-wrap">
+        <div class="table-head">
+          <span class="th">Error type</span>
+          <span class="th right">Students</span>
+          <span class="th right">Flag</span>
+        </div>
+        <div class="table-row flagged">
+          <span class="td-label">Logic / control flow errors</span>
+          <span class="td-pct high">68%</span>
+          <span class="flag">Primary</span>
+        </div>
+        <div class="table-row flagged">
+          <span class="td-label">Incorrect operator usage</span>
+          <span class="td-pct high">54%</span>
+          <span class="flag">Primary</span>
+        </div>
+        <div class="table-row">
+          <span class="td-label">Syntax / punctuation errors</span>
+          <span class="td-pct medium">41%</span>
+          <span class="flag" style="color:var(--muted)">Secondary</span>
+        </div>
+        <div class="table-row">
+          <span class="td-label">Variable scope confusion</span>
+          <span class="td-pct medium">33%</span>
+          <span class="flag" style="color:var(--muted)">Secondary</span>
+        </div>
+        <div class="table-row">
+          <span class="td-label">Missing return statements</span>
+          <span class="td-pct low">18%</span>
+          <span class="flag" style="color:var(--rule)">Monitor</span>
+        </div>
+      </div>
+      <ul class="interp-list">
+        <li class="interp-item primary">
+          <span class="interp-key">Concentration</span>
+          Over two-thirds of students shared the same error type — this is a design problem, not an individual one.
+        </li>
+        <li class="interp-item primary">
+          <span class="interp-key">Root cause</span>
+          Errors clustered around logic and operators, not syntax — students understand what to write, not how to reason through it.
+        </li>
+        <li class="interp-item secondary">
+          <span class="interp-key">Drop-off point</span>
+          Performance collapsed at the debugging stage of every multi-step task, not at initial code construction.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4. INSTRUCTIONAL RESPONSE -->
+  <section class="response-section">
+    <div class="section-label"><span>Instructional Response</span></div>
+    <ul class="response-list">
+      <li class="response-item">
+        <span class="resp-num">01</span>
+        <span class="resp-what">Introduced contrastive error analysis tasks</span>
+        <span class="resp-why">Data showed students could not distinguish correct from incorrect logic. Side-by-side broken/working code pairs forced explicit comparison before writing anything new.</span>
+      </li>
+      <li class="response-item">
+        <span class="resp-num">02</span>
+        <span class="resp-what">Added structured debugging checkpoints</span>
+        <span class="resp-why">Errors went undetected because students had no systematic process. A three-step protocol — read, isolate, test — was embedded at the midpoint of each task.</span>
+      </li>
+      <li class="response-item">
+        <span class="resp-num">03</span>
+        <span class="resp-what">Adjusted pacing to isolate the misconception</span>
+        <span class="resp-why">Two sessions were redirected from new content to consolidate logic and operator understanding — the two highest-flagged categories — before advancing.</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 5. OUTCOME -->
+  <section class="outcome-section">
+    <div class="section-label"><span>Outcome — Before → After</span></div>
+    <div class="outcome-layout">
+      <div class="compare-wrap">
+        <p class="compare-title">Error rates by type — Week 2 vs. Week 4</p>
+        <div class="compare-item">
+          <p class="compare-row-label">Logic / control flow errors</p>
+          <div class="compare-bars">
+            <div class="bar-line">
+              <span class="bar-tag">Before</span>
+              <div class="bar-outer"><div class="bar-inner b" style="width:68%"></div></div>
+              <span class="bar-num dim">68%</span>
+            </div>
+            <div class="bar-line">
+              <span class="bar-tag">After</span>
+              <div class="bar-outer"><div class="bar-inner a" style="width:22%"></div></div>
+              <span class="bar-num">22%</span>
+            </div>
+          </div>
+        </div>
+        <div class="compare-item">
+          <p class="compare-row-label">Incorrect operator usage</p>
+          <div class="compare-bars">
+            <div class="bar-line">
+              <span class="bar-tag">Before</span>
+              <div class="bar-outer"><div class="bar-inner b" style="width:54%"></div></div>
+              <span class="bar-num dim">54%</span>
+            </div>
+            <div class="bar-line">
+              <span class="bar-tag">After</span>
+              <div class="bar-outer"><div class="bar-inner a" style="width:19%"></div></div>
+              <span class="bar-num">19%</span>
+            </div>
+          </div>
+        </div>
+        <div class="compare-item">
+          <p class="compare-row-label">Students self-debugging successfully</p>
+          <div class="compare-bars">
+            <div class="bar-line">
+              <span class="bar-tag">Before</span>
+              <div class="bar-outer"><div class="bar-inner b" style="width:32%"></div></div>
+              <span class="bar-num dim">32%</span>
+            </div>
+            <div class="bar-line">
+              <span class="bar-tag">After</span>
+              <div class="bar-outer"><div class="bar-inner a" style="width:73%"></div></div>
+              <span class="bar-num">73%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="outcome-bullets">
+        <li class="outcome-bullet">
+          <div class="ob-value">32% → 73%</div>
+          <p class="ob-desc">Students successfully self-debugging without teacher intervention — a 41-point increase across two instructional cycles</p>
+        </li>
+        <li class="outcome-bullet">
+          <div class="ob-value">−46pts</div>
+          <p class="ob-desc">Logic error rate reduced from 68% to 22% — the primary flagged error type — after contrastive analysis tasks were introduced</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 6. INSTRUCTIONAL IMPLICATION -->
+  <section class="implication-section">
+    <div class="section-label"><span>Instructional Implication</span></div>
+    <div class="implication-grid">
+      <div class="imp-block">
+        <span class="imp-tag">What this reveals</span>
+        <div class="imp-heading">Error patterns are design signals</div>
+        <p class="imp-body">When two-thirds of a class share the same error, it exposes a gap in instructional sequence — not student ability. Formative data made that visible before it compounded into failed projects.</p>
+      </div>
+      <div class="imp-block">
+        <span class="imp-tag">Across classrooms</span>
+        <div class="imp-heading">Contrastive analysis transfers by domain</div>
+        <p class="imp-body">Presenting broken work before correct models works wherever process skill matters — not just CS. Any CTE program requiring sequential decision-making can apply this cycle without subject-specific expertise.</p>
+      </div>
+      <div class="imp-block">
+        <span class="imp-tag">Scalable use</span>
+        <div class="imp-heading">The cycle, not the content, is the system</div>
+        <p class="imp-body">Problem → data → targeted adjustment → measured result is a replicable protocol. It requires one formative checkpoint, one clear decision rule, and willingness to redirect pacing based on evidence.</p>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+    <footer>
+      <span class="footer-name">Instructional Leadership Portfolio</span>
+      <div class="footer-meta">
+        Secondary & Postsecondary Education | Instructional Design & Systems<br>
+        Pallas Kennedy |  <a href="https://www.linkedin.com/in/codingteacheraz/">LinkedIn</a>
+      </div>
+    </footer>
+
+
+</div>
+</body>
+</html>
