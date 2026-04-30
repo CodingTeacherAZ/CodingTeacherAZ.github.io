@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curriculum Vitae — Pallas G. Kennedy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styling.css" />
+
+ 
+
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-wordmark">Pallas G. <span>Kennedy</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html#competencies">Competencies</a></li>
+        <li><a href="index.html#systems-work">Systems Work</a></li>
+        <li><a href="index.html#credentials">Credentials</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="curriculum.html">Curriculum</a></li>
+        <li><a href="cv.html" class="active">Full CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       CV MASTHEAD — dark header band
+  ============================================================ -->
+  <header class="cv-masthead" role="banner">
+    <div class="container">
+      <div class="cv-masthead-inner">
+
+        <div>
+          <div class="cv-masthead__eyebrow">
+            <span class="eyebrow">Curriculum Vitae</span>
+          </div>
+          <h1 class="cv-masthead__name">
+            Pallas G. <em>Kennedy</em>
+          </h1>
+          <p class="cv-masthead__title">
+            M.S. Physics · Instructional Systems Specialist · Curriculum Architect · CTE Educator
+          </p>
+        </div>
+
+        <div class="cv-action-group">
+          <a href="assets/CV.pdf" download class="cv-btn cv-btn--primary">
+  Download CV (PDF)
+</a>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <polyline points="6 9 6 2 18 2 18 9"/>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+              <rect x="6" y="14" width="12" height="8"/>
+            </svg>
+            Print / Save PDF
+          </button>
+          <a href="index.html" class="cv-btn cv-btn--ghost">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <line x1="19" y1="12" x2="5" y2="12"/>
+              <polyline points="12 19 5 12 12 5"/>
+            </svg>
+            Back to Portfolio
+          </a>
+          <p class="cv-updated">Updated April 2026</p>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <hr class="rule" />
+
+  <!-- ============================================================
+       CV BODY — two-column layout
+  ============================================================ -->
+  <div class="cv-body">
+
+    <!-- ── LEFT SIDEBAR ── -->
+    <aside class="cv-sidebar" aria-label="CV navigation and contact">
+
+      <div class="cv-sidebar__contact">
+        <span class="cv-sidebar__label">Contact</span>
+        <p class="cv-sidebar__name">Pallas G. Kennedy</p>
+        <div class="cv-sidebar__detail">
+          <a href="mailto:pkennedy@evit.edu">pkennedy@evit.edu</a><br>
+          East Valley Institute of Technology<br>
+          1601 W. Main St.<br>
+          Mesa, AZ 85201<br>
+          (480) 461-4154
+        </div>
+      </div>
+
+      <!-- Jump-link navigation, highlighted by scroll position (JS below) -->
+      <nav class="cv-sidebar__nav" aria-label="Jump to CV section">
+        <a href="#cv-education"     class="cv-sidebar__nav-item">Education</a>
+        <a href="#cv-teaching"      class="cv-sidebar__nav-item">Teaching</a>
+        <a href="#cv-pd"            class="cv-sidebar__nav-item">Professional Dev.</a>
+        <a href="#cv-credentials"   class="cv-sidebar__nav-item">Credentials</a>
+        <a href="#cv-societies"     class="cv-sidebar__nav-item">Societies</a>
+        <a href="#cv-publications"  class="cv-sidebar__nav-item">Publications</a>
+      </nav>
+
+      <div class="cv-sidebar__tags">
+        <span class="cv-sidebar__label">Core Competencies</span>
+        <div class="cv-sidebar__tags-list">
+          <span class="tag">Instructional Specialist</span>
+          <span class="tag">Data &amp; Compliance</span>
+          <span class="tag">Curriculum Design</span>
+          <span class="tag">CTE Educator</span>
+          <span class="tag">PD Leadership</span>
+          <span class="tag">Dual Enrollment</span>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- ── MAIN CV CONTENT ── -->
+    <main class="cv-main" id="cv-main">
+
+      <!-- ════════════════════════════════
+           EDUCATION
+      ════════════════════════════════ -->
+      <section class="cv-section reveal" id="cv-education" aria-labelledby="edu-heading">
+        <div class="cv-section__header">
+          <h2 class="cv-section__title" id="edu-heading">Education</h2>
+          <div class="cv-section__rule" aria-hidden="true"></div>
+        </div>
+
+        <div class="cv-edu-entry">
+          <div class="cv-edu-entry__year">2014</div>
+          <div>
+            <p class="cv-edu-entry__degree">Secondary Teaching Certification</p>
+            <p class="cv-edu-entry__field">Teacher Preparation Program</p>
+            <p class="cv-edu-entry__meta">Rio Salado College · Tempe, AZ</p>
+            <span class="cv-edu-entry__gpa">GPA 4.0</span>
+          </div>
+        </div>
+
+        <div class="cv-edu-entry">
+          <div class="cv-edu-entry__year">2011</div>
+          <div>
+            <p class="cv-edu-entry__degree">Teaching and Learning in the Community College Setting</p>
+            <p class="cv-edu-entry__field">Graduate Certificate Program</p>
+            <p class="cv-edu-entry__meta">Rio Salado College · Tempe, AZ</p>
+            <span class="cv-edu-entry__gpa">GPA 4.0</span>
+          </div>
+        </div>
+
+        <div class="cv-edu-entry">
+          <div class="cv-edu-entry__year">2008</div>
+          <div>
+            <p class="cv-edu-entry__degree">Master of Science in Physics</p>
+            <p class="cv-edu-entry__field">
+              Experimental Solid-State Condensed Matter<br>
+              Emphasis in Crystallography and Electron Microscopy
+            </p>
+            <p class="cv-edu-entry__meta">Arizona State University · College of Liberal Arts &amp; Sciences · Tempe, AZ</p>
+            <span class="cv-edu-entry__gpa"><em>magna cum laude</em> · GPA 3.63</span>
+          </div>
+        </div>
+
+        <div class="cv-edu-entry">
+          <div class="cv-edu-entry__year">2006</div>
+          <div>
+            <p class="cv-edu-entry__degree">Bachelor of Science in Physics</p>
+            <p class="cv-edu-entry__field">&nbsp;</p>
+            <p class="cv-edu-entry__meta">Arizona State University · Tempe, AZ</p>
+            <span class="cv-edu-entry__gpa"><em>cum laude</em> · GPA 3.58</span>
+          </div>
+        </div>
+
+        <div class="cv-edu-entry">
+          <div class="cv-edu-entry__year">2003</div>
+          <div>
+            <p class="cv-edu-entry__degree">Associate in Science, Special Requirements</p>
+            <p class="cv-edu-entry__field">Dual degree with Associate in Arts</p>
+            <p class="cv-edu-entry__meta">Mesa Community College · Mesa, AZ</p>
+            <span class="cv-edu-entry__gpa"><em>magna cum laude</em> · GPA 3.76</span>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ════════════════════════════════
+           TEACHING EXPERIENCE
+      ════════════════════════════════ -->
+      <section class="cv-section reveal" id="cv-teaching" aria-labelledby="teach-heading">
+        <div class="cv-section__header">
+          <h2 class="cv-section__title" id="teach-heading">Teaching Experience</h2>
+          <div class="cv-section__rule" aria-hidden="true"></div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2022 –<br>Present</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">Secondary Teacher, Software &amp; App Development</p>
+            <p class="cv-entry__org">East Valley Institute of Technology (EVIT) · Mesa, AZ</p>
+            <p class="cv-entry__detail">
+              CTE instructor designing and delivering a standards-aligned software and app development 
+              program. Curriculum built from the ground up to integrate differentiated, student-centered, 
+              asynchronous learning with hands-on project work and DOK/Bloom's aligned assessments.
+            </p>
+            <div class="cv-entry__courses">
+              <span class="tag">Software Development</span>
+              <span class="tag">App Development</span>
+              <span class="tag">CTE</span>
+              <span class="tag">Asynchronous Learning</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2013 –<br>2022</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">Secondary Teacher</p>
+            <p class="cv-entry__org">New School for the Arts and Academics (NSAA) · Tempe, AZ</p>
+            <p class="cv-entry__detail">
+              Delivered Physics (Dual Enrollment qualified through MCCCD), Trigonometry/Precalculus 
+              (Dual Enrollment qualified through Rio Salado/MCCCD), and Year 2 Algebra. Also served as 
+              STEM Lead and led multiple school-wide curriculum and professional development initiatives.
+            </p>
+            <div class="cv-entry__courses">
+              <span class="tag">Physics — Dual Enrollment</span>
+              <span class="tag">Trig/Pre-Calculus — Dual Enrollment</span>
+              <span class="tag">Algebra II</span>
+              <span class="tag">STEM Lead</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2009 –<br>2013</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">Adjunct Instructor</p>
+            <p class="cv-entry__org">ITT Technical Institute · (Campus 141)</p>
+            <p class="cv-entry__detail">
+              Designed and delivered courses across mathematics, physics, electronics, and professional 
+              development for adult learners in technical degree programs.
+            </p>
+            <ul class="cv-entry__list" aria-label="Courses taught at ITT Tech">
+              <li>GE 127 / MAT 1210 — Math I (Algebra)</li>
+              <li>MAT 1310 — Math II (Algebra &amp; Trigonometry)</li>
+              <li>GE 184 / GS 1140 — Problem Solving (Critical Thinking)</li>
+              <li>GE 253 / PHY 2530 — Physics</li>
+              <li>ET 145 — AC Electronics</li>
+              <li>ET 1210 — DC/AC Electronics</li>
+              <li>GS 1145 — Strategies for the Technical Professional (College Preparedness)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2009<br>Fall</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">Graduate Teaching Assistant</p>
+            <p class="cv-entry__org">Arizona State University · Department of Physics · Tempe, AZ</p>
+            <div class="cv-entry__courses">
+              <span class="tag">PHY 131 — University Physics II: Electricity &amp; Magnetism</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2005 –<br>2007</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">Undergraduate Teaching Assistant</p>
+            <p class="cv-entry__org">Arizona State University · Department of Physics · Tempe, AZ</p>
+            <p class="cv-entry__detail">
+              Designed and led student-centered, group-based recitation sessions for university-level 
+              physics courses serving engineering and science students.
+            </p>
+            <ul class="cv-entry__list" aria-label="Courses supported at ASU">
+              <li>PHY 101 — Introduction to Physics</li>
+              <li>PHY 111 — General Physics I: Classical Mechanics</li>
+              <li>PHY 112 — General Physics II: Electricity &amp; Magnetism</li>
+              <li>PHY 131 — University Physics II: Electricity &amp; Magnetism</li>
+              <li>PHY 201 — Mathematical Methods in Physics I</li>
+              <li>PHY 302 — Mathematical Methods in Physics II</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2002 –<br>2003</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">Student Mathematics Tutor</p>
+            <p class="cv-entry__org">Mesa Community College · Mesa, AZ</p>
+            <p class="cv-entry__detail">All mathematics at or below Calculus II.</p>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2001 –<br>2002</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">Voluntary Teaching Assistant, Algebra II</p>
+            <p class="cv-entry__org">Mesa Arts Academy · Mesa, AZ</p>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ════════════════════════════════
+           PROFESSIONAL DEVELOPMENT & PROJECTS
+      ════════════════════════════════ -->
+      <section class="cv-section reveal" id="cv-pd" aria-labelledby="pd-heading">
+        <div class="cv-section__header">
+          <h2 class="cv-section__title" id="pd-heading">Professional Development &amp; Projects</h2>
+          <div class="cv-section__rule" aria-hidden="true"></div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2025 –<br>2026</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">CTE Curriculum System Design &amp; Implementation</p>
+            <p class="cv-entry__org">East Valley Institute of Technology</p>
+            <p class="cv-entry__detail">
+              Developed and implemented a standards-aligned software and app development curriculum 
+              integrating differentiated, student-centered, asynchronous learning with hands-on projects. 
+              Designed vertically aligned assessments (DOK/Bloom's) and incorporated spiral review to 
+              promote long-term mastery.
+            </p>
+            <div class="cv-entry__courses">
+              <span class="tag">Curriculum Architecture</span>
+              <span class="tag">DOK/Bloom's</span>
+              <span class="tag">Spiral Review</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2023 –<br>2024</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">Professional Development — Multiple Strands</p>
+            <p class="cv-entry__org">East Valley Institute of Technology</p>
+            <ul class="cv-entry__list">
+              <li>Career and Technical Student Organizations (CTSO) Engagement</li>
+              <li>Work-Based Learning</li>
+              <li>Suicide Prevention Training</li>
+              <li>Differentiated Instruction</li>
+              <li>Project-Based Learning</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2022 –<br>2023</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">Curriculum Writing &amp; Instructional Strategy PD</p>
+            <p class="cv-entry__org">East Valley Institute of Technology</p>
+            <p class="cv-entry__detail">
+              Participated in professional development focused on strategies to inspire students 
+              and curriculum writing workshops.
+            </p>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2022<br>Summer</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">Arizona Career and Technical Education (AZCTE) Conference</p>
+            <p class="cv-entry__org">Statewide CTE Conference</p>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2020 –<br>2021</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">Remote Learning Teacher &amp; Trauma-Informed Practice Training</p>
+            <p class="cv-entry__org">New School for the Arts and Academics</p>
+            <p class="cv-entry__detail">
+              Managed the full transition to and delivery of virtual instruction during the pandemic. 
+              Completed training in Building Trauma-Sensitive Schools, Trauma Sensitivity, and 
+              Suicide Prevention.
+            </p>
+            <div class="cv-entry__courses">
+              <span class="tag">Remote Instruction</span>
+              <span class="tag">Trauma-Informed Practice</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2019 –<br>2020</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">Dual Enrollment College Physics — Independent Course Redesign</p>
+            <p class="cv-entry__org">New School for the Arts and Academics</p>
+            <p class="cv-entry__detail">
+              Independently redesigned a high school physics course to align with dual enrollment 
+              College Physics standards. Developed all lectures, labs, assignments, and student 
+              materials from scratch to ensure rigor and postsecondary readiness.
+            </p>
+            <div class="cv-entry__courses">
+              <span class="tag">Postsecondary Alignment</span>
+              <span class="tag">MCCCD</span>
+              <span class="tag">Full Course Design</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2018<br>Spring</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">Faculty Roundtable — Cell Phone Use &amp; Student Mental Health</p>
+            <p class="cv-entry__org">New School for the Arts and Academics</p>
+            <p class="cv-entry__detail">Planned and facilitated an all-faculty roundtable on the impact of cell phone use on student mental health.</p>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2018<br>Fall</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">Faculty Roundtable — Gender Identity and Student Impact</p>
+            <p class="cv-entry__org">New School for the Arts and Academics</p>
+            <p class="cv-entry__detail">Planned and facilitated an all-faculty roundtable on Gender Identity/Dysmorphia and its impact on students.</p>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2018 –<br>2019</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">Algebra II &amp; Precalculus Curriculum Design</p>
+            <p class="cv-entry__org">New School for the Arts and Academics</p>
+            <p class="cv-entry__detail">
+              Developed and implemented standards-aligned Algebra II and Precalculus courses 
+              incorporating differentiated, student-centered, asynchronous learning, hands-on 
+              projects, and vertically aligned DOK/Bloom's assessments with spiral review to 
+              support long-term mastery.
+            </p>
+            <div class="cv-entry__courses">
+              <span class="tag">Curriculum Design</span>
+              <span class="tag">Standards Alignment</span>
+              <span class="tag">Asynchronous Learning</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2017<br>Spring</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">Faculty Roundtable — Poverty in the Classroom</p>
+            <p class="cv-entry__org">New School for the Arts and Academics</p>
+            <p class="cv-entry__detail">Planned and facilitated a faculty roundtable on the impact of poverty in the classroom.</p>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2017<br>Fall</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">All-Faculty Roundtable — Classroom Management</p>
+            <p class="cv-entry__org">New School for the Arts and Academics</p>
+            <p class="cv-entry__detail">Planned and facilitated an all-high-school faculty roundtable on classroom management.</p>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2017<br>Spring</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">Monthly PD Workshop Series — Data-Driven Decision-Making</p>
+            <p class="cv-entry__org">New School for the Arts and Academics</p>
+            <p class="cv-entry__detail">
+              Led the planning, design, and facilitation of monthly professional development 
+              workshops supporting data-driven decision-making strategies across the faculty.
+            </p>
+            <div class="cv-entry__courses">
+              <span class="tag">PD Leadership</span>
+              <span class="tag">Data-Informed Practice</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2016 –<br>2019</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">Grades 6–12 Mathematics Curriculum Alignment — Independent Project</p>
+            <p class="cv-entry__org">New School for the Arts and Academics</p>
+            <p class="cv-entry__detail">
+              Independently aligned the full grades 6–12 mathematics curriculum to Arizona State 
+              Standards. Developed comprehensive curriculum frameworks including overviews, 
+              instructional storylines, scope and sequence documents, curriculum maps, and unit 
+              planning guidance to ensure vertical coherence and instructional consistency across 
+              the entire program.
+            </p>
+            <div class="cv-entry__courses">
+              <span class="tag">Curriculum Architecture</span>
+              <span class="tag">Vertical Alignment</span>
+              <span class="tag">Arizona State Standards</span>
+              <span class="tag">Scope &amp; Sequence</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2016<br>Spring</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">Monthly PD Series — School-Wide Instructional Alignment (Co-Lead)</p>
+            <p class="cv-entry__org">New School for the Arts and Academics</p>
+            <p class="cv-entry__detail">
+              Co-led the planning, design, and facilitation of monthly professional development 
+              workshops focused on school-wide instructional alignment, curriculum implementation, 
+              and teacher practice through standards-based training and instructional coaching strategies.
+            </p>
+            <div class="cv-entry__courses">
+              <span class="tag">Instructional Coaching</span>
+              <span class="tag">Standards-Based Training</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2014 –<br>2019</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">STEM Lead — Professional Development &amp; Instructional Support</p>
+            <p class="cv-entry__org">New School for the Arts and Academics</p>
+            <p class="cv-entry__detail">
+              Designed and facilitated professional development and instructional support for 
+              STEM educators, focusing on standards-based instruction, curriculum integration, 
+              and project-based learning. Multi-year informal Instructional Specialist role 
+              supporting teacher practice across the STEM faculty.
+            </p>
+            <div class="cv-entry__courses">
+              <span class="tag">STEM Leadership</span>
+              <span class="tag">Project-Based Learning</span>
+              <span class="tag">Teacher Support</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2013</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">Physics Modeling Workshop — Electricity &amp; Magnetism (4 weeks)</p>
+            <p class="cv-entry__org">Arizona State University</p>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2013</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">Physics Modeling Workshop — Mechanics (4 weeks)</p>
+            <p class="cv-entry__org">Arizona State University</p>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2009 –<br>2013</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">Course Design — Algebra, Physics, and Problem Solving (Adult Learners)</p>
+            <p class="cv-entry__org">ITT Technical Institute</p>
+            <p class="cv-entry__detail">
+              Designed and developed a lecture-based Algebra course, a lecture-based Physics course, 
+              and a project-based Problem Solving course for adult learners. Created comprehensive 
+              lesson plans, student practice materials, and assessments to support instruction.
+            </p>
+            <div class="cv-entry__courses">
+              <span class="tag">Course Design</span>
+              <span class="tag">Adult Learners</span>
+              <span class="tag">Assessment Design</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry__date">2004 –<br>2006</div>
+          <div class="cv-entry__content">
+            <p class="cv-entry__role">Recitation Session Design — University Physics</p>
+            <p class="cv-entry__org">Arizona State University · Department of Physics</p>
+            <p class="cv-entry__detail">
+              Designed student-centered, group-based recitation sessions for university-level 
+              physics courses serving engineering students.
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ════════════════════════════════
+           AWARDS & CERTIFICATIONS
+      ════════════════════════════════ -->
+      <section class="cv-section reveal" id="cv-credentials" aria-labelledby="cred-heading">
+        <div class="cv-section__header">
+          <h2 class="cv-section__title" id="cred-heading">Awards &amp; Certifications</h2>
+          <div class="cv-section__rule" aria-hidden="true"></div>
+        </div>
+
+        <div class="cv-credentials-grid">
+
+          <div class="cv-credential">
+            <span class="cv-credential__year">2025</span>
+            <div>
+              <p class="cv-credential__name">Artificial Intelligence Certification</p>
+              <p class="cv-credential__issuer">Certiport ITS</p>
+            </div>
+          </div>
+
+          <div class="cv-credential">
+            <span class="cv-credential__year">2024</span>
+            <div>
+              <p class="cv-credential__name">JavaScript Certification</p>
+              <p class="cv-credential__issuer">Certiport ITS</p>
+            </div>
+          </div>
+
+          <div class="cv-credential">
+            <span class="cv-credential__year">2024</span>
+            <div>
+              <p class="cv-credential__name">HTML and CSS Certification</p>
+              <p class="cv-credential__issuer">Certiport ITS</p>
+            </div>
+          </div>
+
+          <div class="cv-credential">
+            <span class="cv-credential__year">2024</span>
+            <div>
+              <p class="cv-credential__name">Responsive Web Design Certificate</p>
+              <p class="cv-credential__issuer">FreeCodeCamp</p>
+            </div>
+          </div>
+
+          <div class="cv-credential">
+            <span class="cv-credential__year">2024</span>
+            <div>
+              <p class="cv-credential__name">Data Analytics Certification</p>
+              <p class="cv-credential__issuer">Certiport ITS</p>
+            </div>
+          </div>
+
+          <div class="cv-credential">
+            <span class="cv-credential__year">2024</span>
+            <div>
+              <p class="cv-credential__name">Computational Thinking Certification</p>
+              <p class="cv-credential__issuer">Certiport ITS</p>
+            </div>
+          </div>
+
+          <div class="cv-credential">
+            <span class="cv-credential__year">2023</span>
+            <div>
+              <p class="cv-credential__name">Python Certification</p>
+              <p class="cv-credential__issuer">Certiport ITS</p>
+            </div>
+          </div>
+
+          <div class="cv-credential">
+            <span class="cv-credential__year">2019</span>
+            <div>
+              <p class="cv-credential__name">CTE Teaching Certification</p>
+              <p class="cv-credential__issuer">Arizona Department of Education</p>
+            </div>
+          </div>
+
+          <div class="cv-credential">
+            <span class="cv-credential__year">2013</span>
+            <div>
+              <p class="cv-credential__name">Secondary Teaching Certification</p>
+              <p class="cv-credential__issuer">Arizona Department of Education</p>
+            </div>
+          </div>
+
+          <div class="cv-credential">
+            <span class="cv-credential__year">2013</span>
+            <div>
+              <p class="cv-credential__name">Teacher of the Quarter — Award</p>
+              <p class="cv-credential__issuer">ITT Technical Institute</p>
+            </div>
+          </div>
+
+          <div class="cv-credential">
+            <span class="cv-credential__year">2006</span>
+            <div>
+              <p class="cv-credential__name">Undergraduate Teaching Assistant of the Year — Award</p>
+              <p class="cv-credential__issuer">ASU Department of Physics</p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ════════════════════════════════
+           ACADEMIC SOCIETIES
+      ════════════════════════════════ -->
+      <section class="cv-section reveal" id="cv-societies" aria-labelledby="soc-heading">
+        <div class="cv-section__header">
+          <h2 class="cv-section__title" id="soc-heading">Academic Societies &amp; Associations</h2>
+          <div class="cv-section__rule" aria-hidden="true"></div>
+        </div>
+
+        <div class="cv-society-list">
+
+          <div class="cv-society-item">
+            <p class="cv-society-item__name">SkillStruck Ambassador</p>
+            <p class="cv-society-item__role">2024 – present</p>
+          </div>
+
+          <div class="cv-society-item">
+            <p class="cv-society-item__name">Computer Science Teachers Association (CSTA)</p>
+            <p class="cv-society-item__role">Member, 2022 – present</p>
+          </div>
+
+          <div class="cv-society-item">
+            <p class="cv-society-item__name">National Technical Honor Society — ITT Chapter 141</p>
+            <p class="cv-society-item__role">Chapter Co-Advisor</p>
+          </div>
+
+          <div class="cv-society-item">
+            <p class="cv-society-item__name">ITT Technical Institute — Keep Students in School Committee</p>
+            <p class="cv-society-item__role">Instructor Representative · Academic Engagement &amp; Student Retention Focus Group</p>
+          </div>
+
+          <div class="cv-society-item">
+            <p class="cv-society-item__name">American Association of Physics Teachers (AAPT)</p>
+            <p class="cv-society-item__role">Member</p>
+          </div>
+
+          <div class="cv-society-item">
+            <p class="cv-society-item__name">Sigma Pi Sigma — National Physics Honor Society</p>
+            <p class="cv-society-item__role">Member</p>
+          </div>
+
+          <div class="cv-society-item">
+            <p class="cv-society-item__name">Society of Physics Students (SPS)</p>
+            <p class="cv-society-item__role">Member</p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ════════════════════════════════
+           PUBLICATIONS
+      ════════════════════════════════ -->
+      <section class="cv-section reveal" id="cv-publications" aria-labelledby="pub-heading">
+        <div class="cv-section__header">
+          <h2 class="cv-section__title" id="pub-heading">Publications</h2>
+          <div class="cv-section__rule" aria-hidden="true"></div>
+        </div>
+
+        <div class="cv-pub">
+          <p class="cv-pub__title"><a href="https://link.springer.com/article/10.1007/s00348-007-0426-8" target="_blank">Droplet Streams for Serial Crystallography of Proteins</a> </p>
+          <p class="cv-pub__meta">
+            Contribution from experimental solid-state condensed matter research ·
+            Arizona State University, Department of Physics
+          </p>
+        </div>
+
+      </section>
+
+    </main>
+  </div><!-- /cv-body -->
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-name">Pallas G. Kennedy</p>
+          <p class="footer-contact">
+            <a href="mailto:pkennedy@evit.edu">pkennedy@evit.edu</a>
+            &nbsp;·&nbsp;
+            East Valley Institute of Technology, Mesa AZ
+            &nbsp;·&nbsp;
+            Updated April 2026
+          </p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html#competencies">Competencies</a>
+          <a href="index.html#systems-work">Systems Work</a>
+          <a href="index.html#credentials">Credentials</a>
+          <a href="curriculum.html">Curriculum</a>
+          <a href="cv.html">Full CV</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js">
+  
+  </script>
+
+</body>
+</html>
