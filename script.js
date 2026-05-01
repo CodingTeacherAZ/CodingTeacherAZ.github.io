@@ -19,6 +19,16 @@
         toggle.setAttribute('aria-expanded', false);
       });
     });
+   
+
+    /* ── Elevate nav on scroll for subtle depth cue ── */
+    const nav = document.querySelector('.site-nav');
+    window.addEventListener('scroll', () => {
+      nav.style.borderBottomColor = window.scrollY > 20
+        ? 'var(--rule)'
+        : 'var(--rule-light)';
+    }, { passive: true });
+
 
     /* ── Scroll reveal (IntersectionObserver) ──
        Adds .visible class when elements enter viewport.
@@ -43,16 +53,7 @@
       /* Fallback: show all immediately if IO not supported */
       revealEls.forEach(el => el.classList.add('visible'));
     }
-  
-    /* ── Elevate nav on scroll for subtle depth cue ── */
-    const nav = document.querySelector('.site-nav');
-    window.addEventListener('scroll', () => {
-      nav.style.borderBottomColor = window.scrollY > 20
-        ? 'var(--rule)'
-        : 'var(--rule-light)';
-    }, { passive: true });
-
-
+   
 
     /* ── Sidebar scroll-spy ──
        Highlights the sidebar nav link matching the
@@ -78,4 +79,23 @@
         { rootMargin: '-20% 0px -60% 0px', threshold: [0, 0.25, 0.5, 0.75, 1] }
       );
       cvSections.forEach(s => spyObserver.observe(s));
+    }
+
+    
+  
+    /* ── Animate progress bars when they come into view ──
+       Bars start at width:0 in CSS so they animate
+       to their target width on first scroll-in.          */
+    const bars = document.querySelectorAll('.curr-progress__bar-fill');
+    if ('IntersectionObserver' in window) {
+      const barObserver = new IntersectionObserver(
+        entries => entries.forEach(e => {
+          if (e.isIntersecting) {
+            /* Target widths are set inline in HTML style attrs */
+            barObserver.unobserve(e.target);
+          }
+        }),
+        { threshold: 0.5 }
+      );
+      bars.forEach(b => barObserver.observe(b));
     }

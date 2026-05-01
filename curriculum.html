@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curriculum Design &amp; Alignment — Pallas G. Kennedy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-wordmark">Pallas G. <span>Kennedy</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html#competencies">Competencies</a></li>
+        <li><a href="index.html#systems-work">Systems Work</a></li>
+        <li><a href="index.html#credentials">Credentials</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="curriculum.html" class="active">Curriculum</a></li>
+        <li><a href="cv.html">Full CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MASTHEAD -->
+  <header class="curr-masthead" role="banner">
+    <div class="container">
+      <div class="curr-masthead-inner">
+        <div>
+          <div class="curr-masthead__eyebrow">
+            <span class="eyebrow">Curriculum Design &amp; Alignment</span>
+          </div>
+          <h1 class="curr-masthead__name">Curriculum <em>Portfolio</em></h1>
+          <p class="curr-masthead__sub">
+            A documentation of full-scale curriculum architecture — vertically aligned programs,
+            dual enrollment courses, and CTE pathways built from standards to assessment.
+          </p>
+        </div>
+        <a href="index.html" class="curr-masthead__back">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          Back to Portfolio
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <hr class="rule" />
+
+  <!-- INTRO + PAGE NAV -->
+  <section class="curr-intro" aria-labelledby="intro-heading">
+    <div class="container">
+      <div class="curr-intro-inner reveal">
+
+        <div>
+          <h2 class="curr-intro__heading" id="intro-heading">
+            Curriculum design<br>as systems work
+          </h2>
+          <p class="curr-intro__body">
+            Curriculum design at the systems level means more than writing lesson plans. It means
+            building the architecture that holds an entire program together — the alignment between
+            standards, instruction, and assessment; the vertical coherence across grade bands; the
+            structures that make a course transferable, scalable, and rigorous.
+          </p>
+          <p class="curr-intro__body">
+            Each project below represents a documented instance of that work — from a full grades
+            6–12 mathematics realignment to ground-up dual enrollment course design and a
+            contemporary CTE software development curriculum.
+          </p>
+        </div>
+
+        <nav class="curr-page-nav" aria-label="Jump to curriculum project">
+          <p class="eyebrow" style="margin-bottom:var(--space-md)">Projects on this page</p>
+          <a href="#phil-heading" class="curr-page-nav__item">
+            <span class="curr-page-nav__num">00</span>
+            <span class="curr-page-nav__content">
+              <span class="curr-page-nav__title">Design Philosophy</span>
+              <span class="curr-page-nav__sub">Principles that guide the work</span>
+            </span>
+            <svg class="curr-page-nav__arrow" viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="#math-heading" class="curr-page-nav__item">
+            <span class="curr-page-nav__num">01</span>
+            <span class="curr-page-nav__content">
+              <span class="curr-page-nav__title">Grades 6–12 Mathematics Alignment</span>
+              <span class="curr-page-nav__sub">Full secondary program · Arizona State Standards</span>
+            </span>
+            <svg class="curr-page-nav__arrow" viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="#physics-heading" class="curr-page-nav__item">
+            <span class="curr-page-nav__num">02</span>
+            <span class="curr-page-nav__content">
+              <span class="curr-page-nav__title">Dual Enrollment College Physics</span>
+              <span class="curr-page-nav__sub">Ground-up redesign · MCCCD aligned</span>
+            </span>
+            <svg class="curr-page-nav__arrow" viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="#cte-heading" class="curr-page-nav__item">
+            <span class="curr-page-nav__num">03</span>
+            <span class="curr-page-nav__content">
+              <span class="curr-page-nav__title">Software &amp; App Development</span>
+              <span class="curr-page-nav__sub">CTE curriculum · DOK/Bloom's integrated</span>
+            </span>
+            <svg class="curr-page-nav__arrow" viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="#math2-heading" class="curr-page-nav__item">
+            <span class="curr-page-nav__num">04</span>
+            <span class="curr-page-nav__content">
+              <span class="curr-page-nav__title">Algebra II &amp; Precalculus</span>
+              <span class="curr-page-nav__sub">Asynchronous course design · Spiral review</span>
+            </span>
+            <svg class="curr-page-nav__arrow" viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </nav>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 00 — DESIGN PHILOSOPHY -->
+  <section class="curr-section curr-section--alt" aria-labelledby="phil-heading">
+    <div class="container">
+      <div class="curr-section__header reveal">
+        <p class="eyebrow">Design Philosophy</p>
+        <h2 class="section-heading" id="phil-heading">Curriculum as Architecture</h2>
+      </div>
+    </div>
+
+    <!-- Philosophy principles — dark band -->
+    <div class="curr-philosophy" aria-labelledby="phil-principles-label">
+      <div class="container">
+        <div class="curr-philosophy-inner reveal">
+          <p class="curr-philosophy__label" id="phil-principles-label">
+            Design<br><strong>Principles</strong>
+          </p>
+          <div class="curr-philosophy__content">
+
+            <div class="curr-philosophy__principle">
+              <p class="curr-philosophy__principle-num">Principle 01</p>
+              <p class="curr-philosophy__principle-text">Alignment is not a feature — it is the foundation.</p>
+              <p class="curr-philosophy__principle-body">
+                Genuine vertical alignment means every standard, assessment, and instructional sequence
+                is designed to build on what came before and prepare students for what comes next.
+                When alignment is absent, rigor becomes inconsistent and students stall at transitions
+                between courses or grade levels — not because they lack ability, but because the
+                architecture failed them.
+              </p>
+            </div>
+
+            <div class="curr-philosophy__principle">
+              <p class="curr-philosophy__principle-num">Principle 02</p>
+              <p class="curr-philosophy__principle-text">Assessment design comes first, not last.</p>
+              <p class="curr-philosophy__principle-body">
+                Backward design — beginning with what mastery looks like and building instruction
+                toward it — produces courses that actually measure the depth of thinking the
+                standards demand. Using DOK and Bloom's Taxonomy at the design stage, not as a
+                labeling exercise after the fact, keeps the cognitive demand honest.
+              </p>
+            </div>
+
+            <div class="curr-philosophy__principle">
+              <p class="curr-philosophy__principle-num">Principle 03</p>
+              <p class="curr-philosophy__principle-text">Spiral review is architecture, not repetition.</p>
+              <p class="curr-philosophy__principle-body">
+                Returning to prior concepts deliberately — at increasing depth and in new contexts —
+                is structurally different from reteaching the same content. Built into the sequence
+                from the start, spiral review produces long-term retention and prevents the skill
+                erosion that typically accelerates by the end of a course.
+              </p>
+            </div>
+
+            <div class="curr-philosophy__principle">
+              <p class="curr-philosophy__principle-num">Principle 04</p>
+              <p class="curr-philosophy__principle-text">Student-centered does not mean unstructured.</p>
+              <p class="curr-philosophy__principle-body">
+                Asynchronous, differentiated learning requires more rigorous design than a lecture —
+                not less. The structure has to live inside the materials: clear pathways, explicit
+                success criteria, and scaffolding calibrated to where students actually are,
+                not where the pacing guide assumes they should be.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 — GRADES 6–12 MATHEMATICS -->
+  <section class="curr-section" aria-labelledby="math-heading">
+    <div class="container">
+
+      <div class="curr-section__header reveal">
+        <p class="eyebrow">Project 01 · Curriculum Architecture</p>
+        <h2 class="section-heading" id="math-heading">Grades 6–12 Mathematics<br>Curriculum Alignment</h2>
+      </div>
+
+      <div class="curr-card reveal">
+        <div class="curr-card__header">
+          <p class="curr-card__title">Full Secondary Mathematics Program — Standards Alignment</p>
+          <p class="curr-card__meta">2016–2019 · New School for the Arts and Academics · Independent project</p>
+        </div>
+        <div class="curr-card__body">
+          <p class="curr-card__desc">
+            From 2016 to 2019, I independently aligned the full grades 6–12 mathematics curriculum 
+            to Arizona State Standards — developing program overviews, instructional storylines, 
+            scope and sequence documents, curriculum maps, and unit planning guidance to ensure 
+            vertical coherence across the entire secondary program. Narrative and sample documents 
+            in preparation.
+          </p>
+          <div class="curr-card__tags">
+            <span class="tag">Vertical Alignment</span>
+            <span class="tag">Scope &amp; Sequence</span>
+            <span class="tag">Curriculum Maps</span>
+            <span class="tag">Unit Planning</span>
+            <span class="tag">AZ State Standards</span>
+            <span class="tag">Grades 6–12</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Artifact embed zone: replace with <iframe src="file.pdf">, <img>, or a linked button -->
+      <div class="artifact-zone reveal" role="region" aria-label="Curriculum sample document — mathematics alignment">
+        <div class="artifact-zone__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <p class="artifact-zone__label">Sample Document</p>
+        <p class="artifact-zone__desc">Scope &amp; sequence · Curriculum map · Unit overview</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 02 — DUAL ENROLLMENT COLLEGE PHYSICS -->
+  <section class="curr-section curr-section--alt" aria-labelledby="physics-heading">
+    <div class="container">
+
+      <div class="curr-section__header reveal">
+        <p class="eyebrow">Project 02 · Dual Enrollment Design</p>
+        <h2 class="section-heading" id="physics-heading">Dual Enrollment<br>College Physics</h2>
+      </div>
+
+      <div class="curr-card reveal">
+        <div class="curr-card__header">
+          <p class="curr-card__title">College Physics — Ground-Up Redesign for Postsecondary Alignment</p>
+          <p class="curr-card__meta">2019–2020 · New School for the Arts and Academics · Independent project · MCCCD aligned</p>
+        </div>
+        <div class="curr-card__body">
+          <p class="curr-card__desc">
+            In 2019–2020, I independently redesigned a high school physics course to meet MCCCD 
+            dual enrollment standards — developing all lectures, labs, assignments, and assessments 
+            from the ground up to ensure postsecondary rigor and transferability. 
+            Narrative and sample documents in preparation.
+          </p>
+            <span class="tag">MCCCD Aligned</span>
+            <span class="tag">Postsecondary Rigor</span>
+            <span class="tag">Lab Design</span>
+            <span class="tag">Assessment Design</span>
+            <span class="tag">Physics</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="artifact-zone reveal" role="region" aria-label="Physics course sample document">
+        <div class="artifact-zone__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <p class="artifact-zone__label">Sample Document</p>
+        <p class="artifact-zone__desc">Syllabus · Lab design · Standards-to-objectives mapping</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 03 — CTE SOFTWARE & APP DEVELOPMENT -->
+  <section class="curr-section" aria-labelledby="cte-heading">
+    <div class="container">
+
+      <div class="curr-section__header reveal">
+        <p class="eyebrow">Project 03 · CTE Curriculum Design</p>
+        <h2 class="section-heading" id="cte-heading">Software &amp; App<br>Development Curriculum</h2>
+      </div>
+
+      <div class="curr-card reveal">
+        <div class="curr-card__header">
+          <p class="curr-card__title">CTE Software &amp; App Development — Full Curriculum System</p>
+          <p class="curr-card__meta">2025–2026 · East Valley Institute of Technology · Standards-aligned · DOK/Bloom's integrated</p>
+        </div>
+        <div class="curr-card__body">
+          <p class="curr-card__desc">
+            Beginning in 2025, I designed and implemented a full CTE software and app development 
+            curriculum at EVIT — integrating differentiated, student-centered, asynchronous learning 
+            with hands-on projects, DOK/Bloom's vertically aligned assessments, and deliberate spiral 
+            review to support long-term mastery. Narrative and sample documents in preparation.
+          </p>
+          <div class="curr-card__tags">
+            <span class="tag">CTE</span>
+            <span class="tag">Software Development</span>
+            <span class="tag">DOK/Bloom's</span>
+            <span class="tag">Asynchronous Design</span>
+            <span class="tag">Spiral Review</span>
+            <span class="tag">Project-Based Learning</span>
+            <span class="tag">Differentiated Instruction</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="artifact-zone reveal" role="region" aria-label="CTE curriculum sample document">
+        <div class="artifact-zone__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <p class="artifact-zone__label">Sample Document</p>
+        <p class="artifact-zone__desc">Unit overview · Assessment rubric · DOK/Bloom's integration</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 04 — ALGEBRA II & PRECALCULUS -->
+  <section class="curr-section curr-section--alt" aria-labelledby="math2-heading">
+    <div class="container">
+
+      <div class="curr-section__header reveal">
+        <p class="eyebrow">Project 04 · Secondary Course Design</p>
+        <h2 class="section-heading" id="math2-heading">Algebra II &amp; Precalculus<br>Course Design</h2>
+      </div>
+
+      <div class="curr-card reveal">
+        <div class="curr-card__header">
+          <p class="curr-card__title">Algebra II &amp; Precalculus — Differentiated, Standards-Aligned Course Design</p>
+          <p class="curr-card__meta">2018–2019 · New School for the Arts and Academics · Asynchronous + spiral review structure</p>
+        </div>
+        <div class="curr-card__body">
+          <p class="curr-card__desc">
+            In 2018–2019, I designed Algebra II and Precalculus courses built around a differentiated, 
+            asynchronous structure — with hands-on projects, DOK/Bloom's aligned assessments, and 
+            deliberate spiral review sequencing to support retention across the full academic year. 
+            Narrative and sample documents in preparation.
+          </p>
+          <div class="curr-card__tags">
+            <span class="tag">Algebra II</span>
+            <span class="tag">Precalculus</span>
+            <span class="tag">Asynchronous Design</span>
+            <span class="tag">Spiral Review</span>
+            <span class="tag">Differentiated Instruction</span>
+            <span class="tag">DOK/Bloom's</span>
+          </div>
+        </div>
+      </div>
+   <div class="artifact-zone reveal" role="region" aria-label="CTE curriculum sample document">
+        <div class="artifact-zone__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <p class="artifact-zone__label">Sample Document</p>
+        <p class="artifact-zone__desc">Unit overview · Assessment rubric · DOK/Bloom's integration</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-name">Pallas G. Kennedy</p>
+          <p class="footer-contact">
+            <a href="mailto:pkennedy@evit.edu">pkennedy@evit.edu</a>
+            &nbsp;·&nbsp; East Valley Institute of Technology, Mesa AZ
+            &nbsp;·&nbsp; Updated April 2026
+          </p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html#competencies">Competencies</a>
+          <a href="index.html#systems-work">Systems Work</a>
+          <a href="index.html#credentials">Credentials</a>
+          <a href="curriculum.html">Curriculum</a>
+          <a href="cv.html">Full CV</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js">
+  
+  </script>
+
+</body>
+</html>
