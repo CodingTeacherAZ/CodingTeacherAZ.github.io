@@ -1,4 +1,7 @@
-
+/* =============================================================
+script.js — Pallas G. Kennedy Portfolio
+Shared across index.html, cv.html, curriculum.html
+============================================================= */
  
 //    JAVASCRIPT — mobile nav + scroll reveal
   /* ── Mobile navigation toggle ── */
@@ -53,7 +56,7 @@
       /* Fallback: show all immediately if IO not supported */
       revealEls.forEach(el => el.classList.add('visible'));
     }
-   
+ 
 
     /* ── Sidebar scroll-spy ──
        Highlights the sidebar nav link matching the
@@ -81,6 +84,7 @@
       cvSections.forEach(s => spyObserver.observe(s));
     }
 
+
     
   
     /* ── Animate progress bars when they come into view ──
@@ -99,3 +103,6 @@
       );
       bars.forEach(b => barObserver.observe(b));
     }
+
+
+
