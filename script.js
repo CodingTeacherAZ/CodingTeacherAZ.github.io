@@ -105,4 +105,3 @@ Shared across index.html, cv.html, curriculum.html
     }
 
 
-
