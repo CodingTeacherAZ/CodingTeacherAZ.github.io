@@ -413,6 +413,14 @@ ul  { list-style: none; }
                 box-shadow   var(--t-mid) var(--ease),
                 transform    var(--t-mid) var(--ease);
 }
+.competency-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
 .competency-card:hover {
     border-color: var(--accent);
     box-shadow: 0 8px 36px rgba(139, 58, 30, 0.08);
