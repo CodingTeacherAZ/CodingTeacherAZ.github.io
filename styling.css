@@ -261,19 +261,21 @@ ul {
                 border-color var(--t-mid) var(--ease);
 }
 
-.nav-links a.cv-btn--primary,
-.nav-links a.cv-btn--primary:hover {
-    color: var(--paper);
-}
-
 .cv-btn--primary {
     background: var(--accent);
-    color: var(--paper);
-    border: 1px solid var(--accent);}
+    color: var(--white);
+    border: 1px solid var(--accent);
+}
 
 .cv-btn--primary:hover {
     background: var(--accent-dim);
     border-color: var(--accent-dim);
+}
+
+/* CV button inside nav — placed after nav-link rules to avoid cascade conflicts */
+.nav-links a.cv-btn--primary,
+.nav-links a.cv-btn--primary:hover {
+    color: var(--white);
 }
 
 .cv-btn svg {
@@ -366,7 +368,7 @@ ul {
     font-weight: 300;
     line-height: 1.85;
     color: var(--ink-mid);
-    max-width: 600px;
+    max-width: 60ch;
     margin-bottom: var(--space-xl);
 }
 
@@ -447,7 +449,7 @@ ul {
 .competencies-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-md);
+    gap: 3rem;
 }
 
 .competency-card {
@@ -494,14 +496,15 @@ ul {
     font-weight: 400;
     line-height: 1.2;
     color: var(--ink);
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-lg);
 }
 
 .competency-card__body {
+    max-width: 60ch;
     font-size: 0.9rem;
     line-height: 1.8;
     color: var(--ink-soft);
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-xl);
 }
 
 .competency-card__list {
@@ -574,6 +577,7 @@ ul {
 }
 
 .differentiator-body {
+    max-width: 60ch;
     font-size: 0.92rem;
     color: rgba(245, 241, 235, 0.65);
     line-height: 1.85;
@@ -587,7 +591,7 @@ ul {
 .evidence-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-md);
+    gap: 3rem;
 }
 
 .evidence-card {
@@ -616,10 +620,11 @@ ul {
     font-size: 1.25rem;
     font-weight: 500;
     color: var(--ink);
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-md);
 }
 
 .evidence-card__body {
+    max-width: 60ch;
     font-size: 0.88rem;
     line-height: 1.75;
     color: var(--ink-soft);
@@ -647,7 +652,7 @@ ul {
 
 .edu-item {
     position: relative;
-    padding: var(--space-lg) 0 var(--space-lg) var(--space-xl);
+    padding: var(--space-xl) 0 var(--space-xl) var(--space-xl);
     border-bottom: 1px solid var(--rule-light);
 }
 
@@ -693,11 +698,12 @@ ul {
 }
 
 .edu-item__field {
+    max-width: 60ch;
     font-family: var(--font-display);
     font-style: italic;
     font-size: 0.98rem;
     color: var(--ink-soft);
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-md);
 }
 
 .edu-item__meta {
@@ -952,4 +958,19 @@ ul {
         width: 2.5rem;
         font-size: 0.6rem;
     }
+}
+
+
+/* ============================================================
+    READABILITY REFINEMENTS
+============================================================ */
+.competency-card__body,
+.evidence-card__body,
+.differentiator-body,
+.edu-item__field {
+    text-wrap: pretty;
+}
+
+.competency-card__list {
+    margin-top: var(--space-sm);
 }
