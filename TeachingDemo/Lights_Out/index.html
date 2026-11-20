@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lights Out</title>
+<link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+<main>
+  <header>
+    <h1>Lights <span>Out</span></h1>
+    <p>Turn off all 16 lights.</p>
+  </header>
+
+  <section aria-label="Score">
+    <dl class="stats">
+      <div class="stat">
+        <dt>Minimum Moves</dt>
+        <dd id="min-moves">–</dd>
+      </div>
+      <div class="stat">
+        <dt>Your Moves</dt>
+        <dd id="your-moves">0</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section aria-label="Game board">
+    <div id="board" class="board" role="grid" aria-label="4 by 4 grid of lights"></div>
+  </section>
+
+  <section aria-label="Game status">
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+  </section>
+
+  <nav class="controls" aria-label="Game controls">
+    <button type="button" id="reset-btn">Reset</button>
+    <button type="button" id="new-btn" class="primary">New Game</button>
+  </nav>
+
+  <p class="help">Keyboard: <kbd>Tab</kbd> to the board, arrow keys to move, <kbd>Enter</kbd> or <kbd>Space</kbd> to press.</p>
+</main>
+
+    <script src="script.js"></script>
+</body>
+</html>
